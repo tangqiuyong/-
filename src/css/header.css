@@ -1,0 +1,226 @@
+#header {
+  width: 1425px;
+  height: 191px;
+  background-color: pink;
+  color: #333;
+  position: relative;
+  font-size: 12px;
+  display: inline-block;
+}
+#header .headertop {
+  height: 28px;
+  background-color: #f5f5f5;
+}
+#header .headertop .navtop {
+  width: 1000px;
+  height: 28px;
+  margin: 0 auto;
+}
+#header .headertop .navtop .jiantou {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-width: 4px;
+  border-color: #999 transparent transparent transparent;
+  border-style: solid dashed dotted dashed;
+  vertical-align: top;
+}
+#header .headertop .navtop .hangzou {
+  float: left;
+  position: relative;
+  vertical-align: top;
+  color: #333;
+}
+#header .headertop .navtop .waizi {
+  position: relative;
+  width: 46px;
+  height: 27px;
+  line-height: 27px;
+  cursor: pointer;
+  border-width: 1px 1px 0;
+  z-index: 1;
+  padding-left: 15px;
+  padding-right: 23px;
+}
+#header .headertop .navtop .topnavul {
+  float: right;
+}
+#header .headertop .navtop .topnavul li {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  padding-right: 20px;
+  padding-left: 10px;
+  position: relative;
+}
+#header .headertop .navtop .topnavul li:nth-child(3) .qiandao {
+  display: inline-block;
+  width: 15px;
+  height: 18px;
+  background: url(../img/2.png) no-repeat;
+  margin-right: 3px;
+  background-position: -95px -208px;
+}
+#header .headertop .navtop .topnavul li .jiantou2 {
+  margin-top: 12px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-width: 4px;
+  border-color: #999 transparent transparent transparent;
+  border-style: solid dashed dotted dashed;
+  vertical-align: top;
+}
+#header .headertop .navtop .topnavul li a {
+  color: #666;
+}
+#header .headertop .navtop .topnavul li em {
+  background: url(../img/2.png)-270px -184px no-repeat;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+#header .headerlogo {
+  height: 120px;
+}
+#header .headerlogo .logoinner {
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+}
+#header .headerlogo .logoinner .logo {
+  display: inline;
+  position: relative;
+  float: left;
+  z-index: 1;
+  margin-right: 1px;
+  min-width: 140px;
+  height: 100px;
+}
+#header .headerlogo .logoinner .logo .logoimg {
+  margin-left: -20px;
+  min-width: 160px;
+  overflow: hidden;
+}
+#header .headerlogo .logoinner .logo .logoimg img {
+  width: 160px;
+  height: 100px;
+}
+#header .headerlogo .logoinner .serve {
+  background: 0 0;
+}
+#header .headerlogo .logoinner .serve a {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  height: 100px;
+}
+#header .headerlogo .logoinner .serve img {
+  width: 304px;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+}
+#header .headerlogo .logoinner .search {
+  display: inline;
+  position: relative;
+  z-index: 10;
+  margin-top: 33px;
+  width: 389px;
+  float: right;
+}
+#header .headerlogo .logoinner .search .search-form {
+  position: relative;
+  z-index: 2;
+  width: 387px;
+  height: 32px;
+  border: 1px solid #fa2a83;
+  border-radius: 2px;
+  background-color: #fff;
+}
+#header .headerlogo .logoinner .search .search-form input {
+  padding: 2px 12px;
+  margin-top: -1px;
+  width: 311px;
+  height: 28px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #333;
+  border: none;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background-color: #fff;
+}
+#header .headerlogo .logoinner .search .search-form a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 6px;
+  width: 53px;
+  height: 26px;
+  text-align: center;
+  background-color: #fa2a83;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.headernav {
+  height: 43px;
+}
+.headernav .navinner {
+  width: 1000px;
+  height: 43px;
+  background-color: gold;
+  margin: 0 auto;
+}
+
+#main {
+  width: 1425px;
+  background-color: gray;
+}
+#main .section_1 {
+  height: 442px;
+}
+#main .section_1 .banner {
+  width: 1000px;
+  height: 392px;
+  background-color: green;
+  margin: 0 auto;
+}
+#main .section_2 {
+  height: 457px;
+}
+#main .section_2 .banner-2 {
+  width: 1000px;
+  height: 457px;
+  background-color: yellow;
+  margin: 0 auto;
+}
+#main .section_3 {
+  height: 3000px;
+}
+#main .section_3 .banner-3 {
+  width: 1000px;
+  height: 3000px;
+  background-color: blue;
+  margin: 0 auto;
+}
+
+#footer {
+  width: 1425px;
+  height: 477px;
+  background-color: turquoise;
+}
+#footer .footerinner {
+  width: 1000px;
+  height: 428px;
+  background-color: brown;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=header.css.map */
