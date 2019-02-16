@@ -1,7 +1,6 @@
 #header {
   width: 1425px;
-  height: 191px;
-  background-color: pink;
+  height: 190px;
   color: #333;
   position: relative;
   font-size: 12px;
@@ -48,7 +47,7 @@
   padding-right: 20px;
   padding-left: 10px;
   position: relative; }
-#header .headertop .navtop .topnavul li:nth-child(3) .qiandao {
+#header .headertop .navtop .topnavul li .qiandao {
   display: inline-block;
   width: 15px;
   height: 18px;
@@ -73,8 +72,19 @@
   position: absolute;
   top: 6px;
   right: 0; }
+#header .headertop .navtop .topnavul li .phone {
+  width: 10px;
+  height: 14px;
+  background: url(../img/2.png) -294px -142px no-repeat;
+  vertical-align: middle;
+  margin-left: 1px;
+  margin-right: 3px;
+  margin-top: -3px;
+  display: inline-block; }
 #header .headerlogo {
-  height: 120px; }
+  height: 100px;
+  padding-top: 20px;
+  background-color: #fff; }
 #header .headerlogo .logoinner {
   width: 1000px;
   height: 100px;
@@ -94,25 +104,20 @@
 #header .headerlogo .logoinner .logo .logoimg img {
   width: 160px;
   height: 100px; }
-#header .headerlogo .logoinner .serve {
-  background: 0 0; }
 #header .headerlogo .logoinner .serve a {
   display: inline-block;
-  position: relative;
-  z-index: 2;
   height: 100px; }
 #header .headerlogo .logoinner .serve img {
+  vertical-align: top;
   width: 304px;
   height: 100px;
-  position: absolute;
   z-index: 1; }
 #header .headerlogo .logoinner .search {
   display: inline;
   position: relative;
   z-index: 10;
   margin-top: 33px;
-  width: 389px;
-  float: right; }
+  width: 389px; }
 #header .headerlogo .logoinner .search .search-form {
   position: relative;
   z-index: 2;
@@ -121,9 +126,11 @@
   border: 1px solid #fa2a83;
   border-radius: 2px;
   background-color: #fff; }
+#header .headerlogo .logoinner .search .search-form .icon-search {
+  font-size: 24px;
+  color: #fff; }
 #header .headerlogo .logoinner .search .search-form input {
   padding: 2px 12px;
-  margin-top: -1px;
   width: 311px;
   height: 28px;
   line-height: 30px;
@@ -144,48 +151,67 @@
   background-color: #fa2a83;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
+#header .headerlogo .logoinner .cart {
+  margin-top: 33px;
+  margin-left: 15px;
+  width: 96px; }
+#header .headerlogo .logoinner .cart .cart-num {
+  width: 96px;
+  height: 32px;
+  line-height: 32px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f6f7f9;
+  border-radius: 2px; }
+#header .headerlogo .logoinner .cart .cart-num i {
+  margin-left: 4px; }
+#header .headerlogo .logoinner .cart .cart-num .num {
+  top: 8px;
+  right: 3px;
+  z-index: 1;
+  border-radius: 8px;
+  height: 16px;
+  width: 24px;
+  line-height: 16px;
+  color: #fff;
+  text-align: center;
+  background-color: #f00581;
+  display: inline-block; }
 
 .headernav {
-  height: 43px; }
+  position: relative;
+  top: 3px;
+  z-index: 3; }
 .headernav .navinner {
   width: 1000px;
+  margin: 0 auto; }
+.headernav .navinner .navinner-ul {
+  height: 43px; }
+.headernav .navinner .navinner-ul > li {
   height: 43px;
-  background-color: gold;
-  margin: 0 auto; }
-
-#main {
-  width: 1425px;
-  background-color: gray; }
-#main .section_1 {
-  height: 442px; }
-#main .section_1 .banner {
-  width: 1000px;
-  height: 392px;
-  background-color: green;
-  margin: 0 auto; }
-#main .section_2 {
-  height: 457px; }
-#main .section_2 .banner-2 {
-  width: 1000px;
-  height: 457px;
-  background-color: yellow;
-  margin: 0 auto; }
-#main .section_3 {
-  height: 3000px; }
-#main .section_3 .banner-3 {
-  width: 1000px;
-  height: 3000px;
-  background-color: blue;
-  margin: 0 auto; }
-
-#footer {
-  width: 1425px;
-  height: 477px;
-  background-color: turquoise; }
-#footer .footerinner {
-  width: 1000px;
-  height: 428px;
-  background-color: brown;
-  margin: 0 auto; }
+  font-size: 16px;
+  line-height: 43px;
+  text-align: center;
+  float: left;
+  padding: 0 10px; }
+.headernav .navinner .navinner-ul > li .icon-down {
+  font-size: 12px;
+  padding-left: 4px; }
+.headernav .navinner .navinner-ul > li a {
+  color: #333; }
+.headernav .navinner .navinner-ul > li.xuanzhong a {
+  color: #df147f;
+  font-weight: bolder; }
+.headernav .navinner .navinner-ul > li.navinner-li {
+  background-color: #f10180;
+  width: 156px;
+  height: 43px;
+  margin-right: 20px; }
+.headernav .navinner .navinner-ul > li.navinner-li .icon-leimu {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 4px; }
+.headernav .navinner .navinner-ul > li.navinner-li a {
+  color: #fff; }
 
 /*# sourceMappingURL=header.css.map */

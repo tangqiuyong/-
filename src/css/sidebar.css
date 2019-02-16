@@ -1,0 +1,68 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #262626;
+  z-index: 101;
+  height: 100%;
+  width: 36px; }
+.sidebar .sidebar-con {
+  position: relative;
+  height: 100%; }
+.sidebar .sidebar-con li {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 4px 0;
+  margin-top: 4px;
+  position: relative; }
+.sidebar .sidebar-con li.active {
+  background: #df147f; }
+.sidebar .sidebar-con li.active .huachu-tip {
+  display: block; }
+.sidebar .sidebar-con li .iconfont {
+  font-size: 24px; }
+.sidebar .sidebar-con li:nth-child(1) {
+  margin-top: 120px; }
+.sidebar .sidebar-con li:nth-child(1) span {
+  display: block;
+  line-height: 18px; }
+.sidebar .sidebar-con li:nth-child(2) {
+  background: #df147f; }
+.sidebar .sidebar-con li:nth-child(2) .cart-num span {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  font-size: 14px;
+  line-height: 20px; }
+.sidebar .sidebar-con li:nth-child(2) .cart-num .num {
+  margin: 0 auto;
+  display: block;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  color: #df147f;
+  background: #fff;
+  border-radius: 50%;
+  margin-top: 4px;
+  line-height: 18px; }
+.sidebar .sidebar-con li.qinabi {
+  position: absolute;
+  top: 500px;
+  margin: 0 auto;
+  width: 36px;
+  left: 0; }
+.sidebar .sidebar-con li.qinabi.go-top {
+  top: 540px; }
+.sidebar .sidebar-con li .huachu-tip {
+  display: none;
+  height: 100%;
+  width: 100px;
+  z-index: 10;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .3s all; }
+
+/*# sourceMappingURL=sidebar.css.map */

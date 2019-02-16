@@ -1,0 +1,166 @@
+#main {
+  width: 1425px;
+  background-image: url(http://a.vpimg2.com/upload/flow/2019/01/31/34/15489177535978.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center top; }
+#main .section_1 {
+  padding-top: 30px;
+  padding-bottom: 20px; }
+#main .section_1 .banner {
+  padding: 12px;
+  padding-bottom: 0;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.86);
+  width: 976px;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0 1px 3px rgba(167, 167, 167, 0.4); }
+#main .section_1 .banner img {
+  display: block;
+  width: 976px;
+  height: 392px; }
+#main .section_2 {
+  height: 457px;
+  width: 1000px;
+  margin: 0 auto; }
+#main .section_2 .title img {
+  width: 1000px;
+  height: 60px;
+  display: block; }
+#main .section_2 .imgbox1 {
+  margin-bottom: 20px;
+  margin-top: 20px; }
+#main .section_2 .imgbox1 img {
+  width: 490px;
+  height: 137px; }
+#main .section_2 .imgbox2 .left-img {
+  width: 208px;
+  height: 199px;
+  margin-right: 20px; }
+#main .section_2 .imgbox2 .imgright {
+  width: 316px; }
+#main .section_2 .imgbox2 .imgright img {
+  width: 316px;
+  height: 88px; }
+#main .section_2 .imgbox2 .imgright img:nth-child(2) {
+  margin-top: 20px; }
+#main .section_3 {
+  width: 1000px;
+  margin: 0 auto; }
+#main .section_3 .title img {
+  width: 1000px;
+  height: 60px;
+  display: block; }
+#main .section_3 .list-item {
+  margin-bottom: 70px; }
+#main .section_3 .list-item .title-2 {
+  border-bottom: 1px solid #000; }
+#main .section_3 .list-item .title-2 img {
+  width: 273px;
+  height: 43px; }
+#main .section_3 .list-item .title-2 a {
+  color: #333;
+  font-size: 14px;
+  position: relative;
+  top: 14px;
+  line-height: 20px; }
+#main .section_3 .list-item .title-2 a .icon-morepress {
+  font-size: 14px; }
+#main .section_3 .list-item .list {
+  margin-top: 20px; }
+#main .section_3 .list-item .list > li {
+  float: left;
+  width: 490px;
+  height: 275px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative; }
+#main .section_3 .list-item .list > li > a:hover .item-img {
+  animation: 0.5s opacity linear 1; }
+@keyframes opacity {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+#main .section_3 .list-item .list > li > a:hover .btn-favorite {
+  display: block; }
+#main .section_3 .list-item .list > li:nth-child(2n) {
+  margin-right: 0; }
+#main .section_3 .list-item .list > li .item-img {
+  width: 490px;
+  height: 235px;
+  opacity: 1;
+  transition: all 0.3s; }
+#main .section_3 .list-item .list > li .zhekou {
+  width: 490px;
+  height: 40px; }
+#main .section_3 .list-item .list > li .zhekou .txt {
+  color: #4d4d4d;
+  float: left;
+  line-height: 40px; }
+#main .section_3 .list-item .list > li .zhekou .txt.txt-zhe {
+  width: 65px;
+  font-size: 12px;
+  padding-left: 10px;
+  position: relative;
+  top: -3px; }
+#main .section_3 .list-item .list > li .zhekou .txt.txt-zhe span {
+  color: #df147f;
+  font-size: 24px;
+  font-weight: bold; }
+#main .section_3 .list-item .list > li .zhekou .txt.txt-name {
+  width: 230px;
+  font-size: 14px;
+  padding-left: 20px; }
+#main .section_3 .list-item .list > li .zhekou .txt.txt-time {
+  float: right;
+  width: 58px;
+  font-size: 12px;
+  padding-right: 15px; }
+#main .section_3 .list-item .list > li .zhekou .txt.txt-time .iconfont {
+  margin-right: 4px;
+  color: #df147f;
+  font-weight: bold; }
+#main .section_3 .list-item .list > li .btn-favorite {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 200px;
+  background: #fff;
+  width: 72px;
+  height: 20px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0 10px;
+  color: #333; }
+#main .section_3 .list-item .list > li .btn-favorite:hover {
+  background: #df147f;
+  color: #fff; }
+#main .section_3 .list-item .list > li .btn-favorite:hover .iconfont {
+  color: #fff; }
+#main .section_3 .list-item .list > li .btn-favorite .iconfont {
+  margin-right: 4px;
+  font-size: 14px;
+  color: #df147f; }
+#main .section_3 .list-item .spec-list {
+  margin-top: 20px; }
+#main .section_3 .list-item .nvzhuang {
+  border-top: 1px solid #e8e8e8; }
+#main .section_3 .list-item .nvzhuang a {
+  width: 324px;
+  display: block;
+  color: #fff;
+  height: 44px;
+  background-color: #f10180;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 44px;
+  margin: -1px auto 20px; }
+
+/*# sourceMappingURL=main.css.map */
