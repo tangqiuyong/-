@@ -54,6 +54,9 @@
   display: block; }
 #main .section_3 .list-item {
   margin-bottom: 70px; }
+#main .section_3 .list-item.section_2 {
+  height: auto;
+  margin-bottom: 0px; }
 #main .section_3 .list-item .title-2 {
   border-bottom: 1px solid #000; }
 #main .section_3 .list-item .title-2 img {
@@ -146,21 +149,51 @@
   margin-right: 4px;
   font-size: 14px;
   color: #df147f; }
-#main .section_3 .list-item .spec-list {
+#main .section_3 .list-item .list.spec-list {
   margin-top: 20px; }
-#main .section_3 .list-item .nvzhuang {
-  border-top: 1px solid #e8e8e8; }
+#main .section_3 .list-item .list.spec-list > li {
+  float: left;
+  width: 320px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative; }
+#main .section_3 .list-item .list.spec-list > li .item-img {
+  width: 320px;
+  height: 153px; }
+#main .section_3 .list-item .list.spec-list > li:nth-child(2n) {
+  margin-right: 20px; }
+#main .section_3 .list-item .list.spec-list > li:nth-child(3n) {
+  margin-right: 0; }
+#main .section_3 .list-item .list.spec-list > li .zhekou {
+  width: 320px;
+  height: 40px; }
+#main .section_3 .list-item .list.spec-list > li .zhekou .txt {
+  font-size: 16px;
+  line-height: 40px; }
+#main .section_3 .list-item .list.spec-list > li .zhekou .txt.txt-zhe {
+  width: auto; }
+#main .section_3 .list-item .list.spec-list > li .zhekou .txt.txt-zhe span {
+  font-size: 20px;
+  margin-right: 5px;
+  font-weight: 400; }
+#main .section_3 .list-item .list.spec-list > li .zhekou .txt.txt-name {
+  width: 210px; }
+#main .section_3 .list-item .nvzhuang.dangqi {
+  margin-top: 70px;
+  padding-bottom: 70px; }
 #main .section_3 .list-item .nvzhuang a {
-  width: 324px;
   display: block;
   color: #fff;
-  height: 44px;
   background-color: #f10180;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   font-size: 16px;
   text-align: center;
-  line-height: 44px;
-  margin: -1px auto 20px; }
+  width: 270px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+  padding: 0 35px; }
 
 /*# sourceMappingURL=main.css.map */

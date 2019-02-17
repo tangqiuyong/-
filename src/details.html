@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keyword" content="" />
+    <meta name="anthor" content="" />
+    <title>唯品会</title>
+    <!-- iconfont.css -->
+    <link
+      rel="stylesheet"
+      href="http://at.alicdn.com/t/font_1046914_y1z97xoskk8.css"
+    />
+    <!-- swiper.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/sidebar-right.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/var.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+
+  </head>
+
+  <body>
+    <!--页面头部-->
+    <div id="header-box"></div>
+
+    <!--页面主题-->
+    <div class="" id="main"></div>
+    <!--页面底部-->
+    <div id="footer-box"></div>
+
+    <!-- right sidebar -->
+    <div id="sidebar-right"></div>
+
+    <script src="./js/lib/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script src="./js/sidebar.js"></script>
+    <script>
+         $(function(){
+            /*公共部分：头部*/
+            $("#header-box").load("./template/header.html");
+            /*公共部分：right sidebar*/
+            $("#sidebar-right").load("./template/sidebar-right.html");
+            $("#footer-box").load("./template/footer.html");
+        })
+    </script>
+  </body>
+</html>
