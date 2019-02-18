@@ -6,8 +6,7 @@
     display: inline-block;
     .maininner {
         width: $width;
-        height: 1000px;
-        margin: $margin;
+        margin: 0 auto;
         padding-top: 15px;
         .pro-list {
             // width: $width;
@@ -153,16 +152,16 @@
                         width: 78px;
                         em {
                             display: inline-block;
-                            margin: 14px 0 0 14px; 
+                            margin: 14px 0 0 14px;
                         }
                         span {
                             display: inline-block;
                             position: relative;
                             width: 16px;
                             color: #999;
-                            margin-top: 18px; 
+                            margin-top: 18px;
                         }
-                        .iconfont{
+                        .iconfont {
                             line-height: 6px;
                             font-weight: bold;
                             font-size: 12px;
@@ -240,7 +239,7 @@
                 }
                 .span3 {
                     // width: 28px;
-                    padding:0 9px;
+                    padding: 0 9px;
                     font-size: 12px;
                     height: 24px;
                     line-height: 24px;
@@ -256,6 +255,7 @@
     }
     .main-content {
         width: $width;
+        margin: 0 auto;
         margin-bottom: 60px;
         padding-bottom: 10px;
         background-color: #fff;
@@ -269,6 +269,7 @@
         z-index: 9;
         .good-list {
             width: 1020px;
+            margin: 0 auto;
             .good-box {
                 position: relative;
                 z-index: 1;
@@ -279,9 +280,17 @@
                 word-spacing: 0;
                 vertical-align: top;
                 display: inline-block;
+                &:hover {
+                    box-shadow: 0 0 6px#666;
+                    // background-color: black;
+                    z-index: 3;
+                }
+                &:nth-child(4n) {
+                    margin-right: 0;
+                }
                 .good-img {
                     width: 235px;
-                    margin-bottom: 10px;
+                    background-color: #fff;
                     a {
                         display: block;
                         width: 235px;
@@ -296,6 +305,7 @@
                 }
                 .shangzi {
                     display: inline-block;
+                    margin-bottom: 3px;
                     span {
                         margin-right: 10px;
                         color: #f10180;
@@ -309,6 +319,7 @@
                         padding-top: 5px;
                         color: #999;
                         text-decoration: line-through;
+                        font-size: 12px;
                     }
                     strong {
                         float: right;
@@ -318,6 +329,16 @@
                         color: #f1b13b;
                         border: 1px solid #f1b13b;
                         border-radius: 2px;
+                        font-size: 12px;
+                    }
+                }
+                .xiazi {
+                    font-weight: 400;
+                    overflow: hidden;
+                    margin-bottom: 5px;
+                    font-size: 12px;
+                    a {
+                        color: #666;
                     }
                 }
             }
