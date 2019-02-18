@@ -10,7 +10,7 @@
         margin: $margin;
         padding-top: 15px;
         .pro-list {
-            width: $width;
+            // width: $width;
             border: 1px solid #dfdfdf;
             border-bottom: none;
             // position: relative;
@@ -127,12 +127,6 @@
                 height: 46px;
                 font-size: 12px;
                 color: #666;
-                i {
-                    // position: absolute;
-                    top: -17px;
-                    display: block;
-                    line-height: 20px;
-                }
                 .zonghewai {
                     text-align: center;
                     cursor: pointer;
@@ -149,47 +143,54 @@
                     }
                 }
                 .jiagewai {
+                    height: 46px;
                     z-index: 3;
                     text-align: center;
                     cursor: pointer;
                     float: left;
-                    line-height: 46px;
                     border-right: 1px solid #dfdfdf;
                     .jiage {
                         width: 78px;
                         em {
                             display: inline-block;
-                            margin-left: 2px;
+                            margin: 14px 0 0 14px; 
                         }
                         span {
                             display: inline-block;
                             position: relative;
                             width: 16px;
                             color: #999;
+                            margin-top: 18px; 
+                        }
+                        .iconfont{
+                            line-height: 6px;
+                            font-weight: bold;
+                            font-size: 12px;
+                            display: block;
                         }
                     }
                 }
-                .zhekouwai {
-                    z-index: 3;
-                    text-align: center;
-                    cursor: pointer;
-                    float: left;
-                    line-height: 46px;
-                    border-right: 1px solid #dfdfdf;
-                    .zhekou {
-                        width: 78px;
-                        em {
-                            display: inline-block;
-                            margin-left: 2px;
-                        }
-                        span {
-                            display: inline-block;
-                            position: relative;
-                            width: 16px;
-                            color: #999;
-                        }
-                    }
-                }
+                // .zhekouwai {
+                //     z-index: 3;
+                //     text-align: center;
+                //     cursor: pointer;
+                //     float: left;
+                //     line-height: 46px;
+                //     border-right: 1px solid #dfdfdf;
+                //     .zhekou {
+                //         width: 78px;
+                //         em {
+                //             display: inline-block;
+                //             margin-left: 2px;
+                //         }
+                //         span {
+                //             display: inline-block;
+                //             position: relative;
+                //             width: 16px;
+                //             color: #999;
+                //         }
+                //     }
+                // }
                 .shangpin {
                     padding: 15px 15px 15px 20px;
                     a {
@@ -216,9 +217,10 @@
                     background-color: #fff;
                     border: 1px solid #b8b8b8;
                     color: #848585;
-                    margin-left: 2px;
+                    display: inline-block;
+                    border-radius: 3px;
                     i {
-                        margin-left: 7px;
+                        // margin-left: 7px;
                     }
                 }
                 em {
@@ -237,15 +239,17 @@
                     height: 21px;
                 }
                 .span3 {
-                    width: 28px;
+                    // width: 28px;
+                    padding:0 9px;
                     font-size: 12px;
                     height: 24px;
                     line-height: 24px;
-                    padding: 0 10px 0 9px;
                     background: #fafafa;
                     border: 1px solid #dbdbdb;
                     color: #d1d1d1;
                     margin: 0 8px 0 12px;
+                    display: inline-block;
+                    border-radius: 3px;
                 }
             }
         }
