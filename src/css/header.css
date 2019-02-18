@@ -65,6 +65,8 @@
   vertical-align: top; }
 #header .headertop .navtop .topnavul li a {
   color: #666; }
+#header .headertop .navtop .topnavul li a:hover {
+  color: #df147f; }
 #header .headertop .navtop .topnavul li em {
   background: url(../img/2.png)-270px -184px no-repeat;
   width: 16px;

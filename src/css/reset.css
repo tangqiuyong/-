@@ -70,16 +70,21 @@ td {
     border: 0;
     outline: 0;
     background: transparent;
-    font-family:tahoma,arial,Hiragino Sans GB,WenQuanYi Micro Hei,\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;
+    font-family: tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
 }
-i{
+
+i,
+em,
+strong {
     font-style: normal;
 }
-strong{
+
+strong,
+em {
     font-weight: normal;
 }
-body {
-}
+
+body {}
 
 ol,
 ul {
@@ -145,7 +150,8 @@ table {
 .right {
     float: right;
 }
-.l1eps{
+
+.l1eps {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
