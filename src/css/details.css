@@ -200,14 +200,13 @@
   position: relative;
   z-index: 1;
   width: 235px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  padding: 8px;
   letter-spacing: 0;
   word-spacing: 0;
   vertical-align: top;
   display: inline-block; }
 #main .main-content .good-list .good-box:hover {
-  box-shadow: 0 0 6px #666;
+  box-shadow: 0 0 6px #aaa;
   z-index: 3; }
 #main .main-content .good-list .good-box:nth-child(4n) {
   margin-right: 0; }
