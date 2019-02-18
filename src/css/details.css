@@ -196,5 +196,64 @@
   border: 1px solid #dbdbdb;
   color: #d1d1d1;
   margin: 0 8px 0 12px; }
+#main .main-content {
+  width: 1000px;
+  margin-bottom: 60px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
+  min-height: 300px;
+  margin-top: 20px;
+  position: relative;
+  margin-left: 1px;
+  letter-spacing: -.1em;
+  word-spacing: -.2em;
+  z-index: 9; }
+#main .main-content .good-list {
+  width: 1020px; }
+#main .main-content .good-list .good-box {
+  position: relative;
+  z-index: 1;
+  width: 235px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 0;
+  word-spacing: 0;
+  vertical-align: top;
+  display: inline-block; }
+#main .main-content .good-list .good-box .good-img {
+  width: 235px;
+  margin-bottom: 10px; }
+#main .main-content .good-list .good-box .good-img a {
+  display: block;
+  width: 235px;
+  height: 297px; }
+#main .main-content .good-list .good-box .good-img a img {
+  border: 0 none;
+  width: 235px;
+  height: 297px;
+  vertical-align: top; }
+#main .main-content .good-list .good-box .shangzi {
+  display: inline-block; }
+#main .main-content .good-list .good-box .shangzi span {
+  margin-right: 10px;
+  color: #f10180;
+  font-size: 22px;
+  line-height: 1; }
+#main .main-content .good-list .good-box .shangzi em {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  padding-top: 5px;
+  color: #999;
+  text-decoration: line-through; }
+#main .main-content .good-list .good-box .shangzi strong {
+  float: right;
+  margin-left: 10px;
+  padding-right: 3px;
+  padding-left: 3px;
+  color: #f1b13b;
+  border: 1px solid #f1b13b;
+  border-radius: 2px; }
 
 /*# sourceMappingURL=details.css.map */

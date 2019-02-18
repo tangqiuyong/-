@@ -250,4 +250,73 @@
             }
         }
     }
+    .main-content {
+        width: $width;
+        margin-bottom: 60px;
+        padding-bottom: 10px;
+        background-color: #fff;
+        background-color: rgba(255, 255, 255, .85);
+        min-height: 300px;
+        margin-top: 20px;
+        position: relative;
+        margin-left: 1px;
+        letter-spacing: -.1em;
+        word-spacing: -.2em;
+        z-index: 9;
+        .good-list {
+            width: 1020px;
+            .good-box {
+                position: relative;
+                z-index: 1;
+                width: 235px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                letter-spacing: 0;
+                word-spacing: 0;
+                vertical-align: top;
+                display: inline-block;
+                .good-img {
+                    width: 235px;
+                    margin-bottom: 10px;
+                    a {
+                        display: block;
+                        width: 235px;
+                        height: 297px;
+                        img {
+                            border: 0 none;
+                            width: 235px;
+                            height: 297px;
+                            vertical-align: top;
+                        }
+                    }
+                }
+                .shangzi {
+                    display: inline-block;
+                    span {
+                        margin-right: 10px;
+                        color: #f10180;
+                        font-size: 22px;
+                        line-height: 1;
+                    }
+                    em {
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-left: 10px;
+                        padding-top: 5px;
+                        color: #999;
+                        text-decoration: line-through;
+                    }
+                    strong {
+                        float: right;
+                        margin-left: 10px;
+                        padding-right: 3px;
+                        padding-left: 3px;
+                        color: #f1b13b;
+                        border: 1px solid #f1b13b;
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+    }
 }
