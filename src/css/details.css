@@ -212,7 +212,8 @@
   margin-right: 0; }
 #main .main-content .good-list .good-box .good-img {
   width: 235px;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-bottom: 10px; }
 #main .main-content .good-list .good-box .good-img a {
   display: block;
   width: 235px;
@@ -222,15 +223,15 @@
   width: 235px;
   height: 297px;
   vertical-align: top; }
-#main .main-content .good-list .good-box .shangzi {
+#main .main-content .good-list .good-box .ziti .shangzi {
   display: inline-block;
   margin-bottom: 3px; }
-#main .main-content .good-list .good-box .shangzi span {
+#main .main-content .good-list .good-box .ziti .shangzi span {
   margin-right: 10px;
   color: #f10180;
   font-size: 22px;
   line-height: 1; }
-#main .main-content .good-list .good-box .shangzi em {
+#main .main-content .good-list .good-box .ziti .shangzi em {
   display: inline-block;
   vertical-align: top;
   margin-left: 10px;
@@ -238,7 +239,7 @@
   color: #999;
   text-decoration: line-through;
   font-size: 12px; }
-#main .main-content .good-list .good-box .shangzi strong {
+#main .main-content .good-list .good-box .ziti .shangzi strong {
   float: right;
   margin-left: 10px;
   padding-right: 3px;
@@ -247,12 +248,12 @@
   border: 1px solid #f1b13b;
   border-radius: 2px;
   font-size: 12px; }
-#main .main-content .good-list .good-box .xiazi {
+#main .main-content .good-list .good-box .ziti .xiazi {
   font-weight: 400;
   overflow: hidden;
   margin-bottom: 5px;
   font-size: 12px; }
-#main .main-content .good-list .good-box .xiazi a {
+#main .main-content .good-list .good-box .ziti .xiazi a {
   color: #666; }
 
 /*# sourceMappingURL=details.css.map */
