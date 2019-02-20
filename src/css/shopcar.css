@@ -244,6 +244,8 @@
   color: #999;
   line-height: 32px;
   overflow: hidden; }
+#shopwrap .shopinner .rightcontent .rightinner .from {
+  border-bottom: 1px dashed #e6e6e6; }
 #shopwrap .shopinner .rightcontent .rightinner .from dl {
   margin-top: 5px;
   font-size: 12px;

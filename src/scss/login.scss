@@ -53,6 +53,100 @@
         min-height: 550px;
         width: 1000px;
         background-color: bisque;
+        .denglu {
+            width: 360px;
+            height: 451px;
+            border-radius: 2px;
+            background-color: #fff;
+            .from {
+                width: 360px;
+                .nav {
+                    border-bottom: 1px solid #e0e0e0;
+                    font-size: 0;
+                    .navleft {
+                        position: relative;
+                        display: inline-block;
+                        width: 180px;
+                        vertical-align: top;
+                        text-align: center;
+                        color: #666;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 50px;
+                        cursor: pointer;
+                        overflow: hidden;
+                        i {
+                            position: absolute;
+                            top: 15px;
+                            right: 0;
+                            z-index: 1;
+                            width: 1px;
+                            height: 20px;
+                            background-color: #ccc;
+                            content: '';
+                            font-size: 0;
+                            line-height: 0;
+                        }
+                    }
+                    .navright {
+                        width: 180px;
+                        vertical-align: top;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 50px;
+                        color: #f10180;
+                        cursor: default;
+                        overflow: hidden;
+                    }
+                }
+                .input {
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 300px;
+                    height: 297px;
+                    .first {
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: top;
+                        input {
+                            padding-left: 40px;
+                            width: 248px;
+                            height: 32px;
+                            line-height: 32px;
+                            padding: 6px 10px;
+                            border: 1px solid #b2b2b2;
+                            border-radius: 3px;
+                            outline: 0;
+                        }
+                    }
+                    .waiceng {
+                        width: 300px;
+                        height: 40px;
+                        color: #333;
+                        font-size: 12px;
+                        .jizhu {
+                            display: inline-block;
+                            vertical-align: middle;
+                            margin-right: 5px;
+                            font-size: 0;
+                            line-height: 0;
+                            // width: 19px;
+                            // height: 16px;
+                            input {
+                                width: 19px;
+                                height: 16px;
+                            }
+                            span {
+                                width: 64px;
+                                height: 16px;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
