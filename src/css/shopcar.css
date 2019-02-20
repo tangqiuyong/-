@@ -244,6 +244,10 @@
   color: #999;
   line-height: 32px;
   overflow: hidden; }
+#shopwrap .shopinner .rightcontent .rightinner .from dl {
+  margin-top: 5px;
+  font-size: 12px;
+  height: 40px; }
 #shopwrap .shopinner .rightcontent .rightinner .from .song {
   width: 250px;
   border: 1px solid #ccc;
@@ -266,7 +270,6 @@
 #shopwrap .shopinner .rightcontent .rightinner .from .yun {
   float: left;
   font-size: 12px;
-  width: 40px;
   text-align: left;
   color: #999;
   line-height: 32px;
@@ -282,5 +285,62 @@
   margin-right: 5px; }
 #shopwrap .shopinner .rightcontent .rightinner .from .yun .ding {
   color: #666; }
+#shopwrap .shopinner .rightcontent .rightinner .from .junma {
+  border: 2px solid #f43499;
+  height: 26px;
+  line-height: 24px;
+  padding: 0 20px;
+  max-width: 356px;
+  min-width: 28px;
+  position: relative; }
+#shopwrap .shopinner .rightcontent .rightinner .from .junma .i-selected {
+  background-image: url(//shop.vipstatic.com/img/detail/detail-sprites-hash-ca10c0e2.png?9cbd6945);
+  background-position: -500px -150px;
+  width: 17px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 0; }
+#shopwrap .shopinner .rightcontent .rightinner .from .shu-right {
+  border: 1px solid #b3b3b3;
+  color: #333; }
+#shopwrap .shopinner .rightcontent .rightinner .from .shu-right .i-jian {
+  display: block;
+  text-align: center;
+  width: 20px;
+  height: 28px;
+  line-height: 28px;
+  background-color: #f9f8f8;
+  color: #dad8d8; }
+#shopwrap .shopinner .rightcontent .rightinner .from .shu-right .i-jian.i-add {
+  color: #333; }
+#shopwrap .shopinner .rightcontent .rightinner .from .shu-right em {
+  text-align: center;
+  width: 29px;
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+  border-left: 1px solid #e4e3e3;
+  border-right: 1px solid #e4e3e3; }
+#shopwrap .shopinner .rightcontent .rightinner .from .shu-right-txt {
+  line-height: 28px;
+  text-indent: 1em; }
+#shopwrap .shopinner .rightcontent .rightinner .from .cart-num {
+  margin-bottom: 12px;
+  margin-left: 40px;
+  margin-top: 20px;
+  width: 198px;
+  height: 46px;
+  background-color: #f10180;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: 46px;
+  border-radius: 3px; }
+#shopwrap .shopinner .rightcontent .rightinner .from .cart-num .iconfont {
+  font-size: 24px;
+  margin-right: 10px; }
 
 /*# sourceMappingURL=shopcar.css.map */
