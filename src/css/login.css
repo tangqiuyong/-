@@ -1,0 +1,61 @@
+.headerlogo {
+  width: 1425px;
+  height: 100px;
+  padding-top: 20px;
+  background-color: #fff; }
+.headerlogo .logoinner {
+  position: relative;
+  width: 1000px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto; }
+.headerlogo .logoinner .logo {
+  display: inline;
+  position: relative;
+  float: left;
+  z-index: 1;
+  margin-right: 1px;
+  min-width: 140px;
+  height: 100px; }
+.headerlogo .logoinner .logo .logoimg {
+  margin-left: -20px;
+  min-width: 160px;
+  overflow: hidden; }
+.headerlogo .logoinner .logo .logoimg img {
+  width: 160px;
+  height: 100px; }
+.headerlogo .logoinner .serve {
+  background: url(https://member-ssl.vipstatic.com/img/passport/sprites-hash-21600f5c.png?131e7010) 0 0 no-repeat;
+  width: 304px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.bgimg {
+  background-image: url(https://a.vpimg2.com/upload/flow/2019/01/29/88/15487540172274.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 650px;
+  width: 1425px; }
+.bgimg .content {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 50px 20px;
+  min-height: 550px;
+  width: 1000px;
+  background-color: bisque; }
+
+.footer {
+  width: 1425px;
+  font-size: 12px; }
+.footer .foot {
+  width: 1000px;
+  margin: 0 auto;
+  height: 78px;
+  line-height: 78px; }
+.footer .foot p {
+  color: #666;
+  text-align: center; }
+
+/*# sourceMappingURL=login.css.map */
