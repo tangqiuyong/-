@@ -47,7 +47,6 @@
   background-color: bisque; }
 .bgimg .content .denglu {
   width: 360px;
-  height: 451px;
   border-radius: 2px;
   background-color: #fff; }
 .bgimg .content .denglu .from {
@@ -75,7 +74,7 @@
   width: 1px;
   height: 20px;
   background-color: #ccc;
-  content: '';
+  content: "";
   font-size: 0;
   line-height: 0; }
 .bgimg .content .denglu .from .nav .navright {
@@ -92,20 +91,26 @@
   margin-right: auto;
   margin-left: auto;
   width: 300px;
-  height: 297px; }
+  height: 297px;
+  padding-top: 10px; }
 .bgimg .content .denglu .from .input .first {
+  width: 300px;
+  margin-top: 30px;
   position: relative;
   display: inline-block;
-  vertical-align: top; }
-.bgimg .content .denglu .from .input .first input {
-  padding-left: 40px;
-  width: 248px;
-  height: 32px;
-  line-height: 32px;
-  padding: 6px 10px;
   border: 1px solid #b2b2b2;
-  border-radius: 3px;
-  outline: 0; }
+  border-radius: 3px; }
+.bgimg .content .denglu .from .input .first.noborder {
+  border: 0; }
+.bgimg .content .denglu .from .input .first .iconfont {
+  margin: 0 0 0 10px;
+  font-size: 12px;
+  color: #aaa; }
+.bgimg .content .denglu .from .input .first input {
+  width: 248px;
+  height: 44px;
+  line-height: 44px;
+  border: 0; }
 .bgimg .content .denglu .from .input .waiceng {
   width: 300px;
   height: 40px;
@@ -122,6 +127,114 @@
   width: 64px;
   height: 16px;
   display: block; }
+.bgimg .content .denglu .from .input .btn {
+  height: 46px;
+  padding: 0; }
+.bgimg .content .denglu .from .input .btn .btn-submit {
+  overflow: hidden;
+  border: 0;
+  display: inline-block;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 72px;
+  background-color: #f10180;
+  color: #fff;
+  margin-top: 4px;
+  width: 300px;
+  cursor: pointer;
+  outline: 0;
+  height: 46px; }
+.bgimg .content .denglu .from .other-login {
+  padding: 0 30px; }
+.bgimg .content .denglu .from .other-login .icon-weixin {
+  margin-bottom: 12px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: relative; }
+.bgimg .content .denglu .from .other-login .icon-weixin .icon-line {
+  display: inline-block;
+  height: 1px;
+  background: #ddd;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 19px; }
+.bgimg .content .denglu .from .other-login .icon-weixin .iconfont {
+  margin: 0 10px;
+  font-size: 30px;
+  z-index: 2;
+  background: #fff;
+  position: relative;
+  padding: 0 10px; }
+.bgimg .content .denglu .from .other-login .link-common {
+  color: #333;
+  font-size: 12px;
+  padding-bottom: 30px; }
+.bgimg .content .denglu .from .other-login .link-common ul > li {
+  float: left;
+  padding: 0 10px;
+  height: 24px;
+  line-height: 24px; }
+.bgimg .content .denglu .from .other-login .link-common ul > li:first-child {
+  padding-left: 0; }
+.bgimg .content .denglu .from .other-login .link-common ul > li:nth-child(1), .bgimg .content .denglu .from .other-login .link-common ul > li:nth-child(2) {
+  position: relative; }
+.bgimg .content .denglu .from .other-login .link-common ul > li:nth-child(1) i.line, .bgimg .content .denglu .from .other-login .link-common ul > li:nth-child(2) i.line {
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  top: 6px;
+  border-right: 1px solid #e0e0e0; }
+.bgimg .content .denglu .from .other-login .link-common ul > li:nth-child(4) {
+  padding: 0 20px 0 30px;
+  color: #999; }
+.bgimg .content .denglu .from .other-login .link-common ul > li:nth-child(4) .iconfont {
+  font-size: 12px;
+  color: #999;
+  margin-left: 6px;
+  font-weight: bold; }
+.bgimg .content .denglu .from .other-login .link-common ul > li:nth-child(4) .more {
+  display: block; }
+.bgimg .content .denglu .from .other-login .link-common ul > li:nth-child(4) .shouqi {
+  display: none; }
+.bgimg .content .denglu .from .other-login .link-common ul > li:nth-child(4).active {
+  display: block; }
+.bgimg .content .denglu .from .other-login .link-common ul > li:nth-child(4).active .more {
+  display: none; }
+.bgimg .content .denglu .from .other-login .link-common ul > li:nth-child(4).active .shouqi {
+  display: block; }
+.bgimg .content .denglu .from .other-login .link-common ul > li:nth-child(5) {
+  padding: 0;
+  float: right; }
+.bgimg .content .denglu .from .other-login .login-links {
+  color: #333;
+  font-size: 12px;
+  display: none; }
+.bgimg .content .denglu .from .other-login .login-links.active {
+  display: block; }
+.bgimg .content .denglu .from .other-login .login-links li {
+  float: left;
+  padding: 0 10px;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  padding: 0 12px 10px; }
+.bgimg .content .denglu .from .other-login .login-links li:first-child {
+  padding-left: 0; }
+.bgimg .content .denglu .from .other-login .login-links li:last-child {
+  padding-left: 0;
+  padding-right: 0; }
+.bgimg .content .denglu .from .other-login .login-links li i.line {
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  top: 6px;
+  border-right: 1px solid #e0e0e0; }
 
 .footer {
   width: 1425px;

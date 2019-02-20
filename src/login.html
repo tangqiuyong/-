@@ -45,6 +45,7 @@
                     <div class="input">
                         <div class="first">
                             <div class="first-input">
+                                    <i class="iconfont icon-xin"></i>
                                 <input type="text" placeholder="手机号/用户名/邮箱">
                                 <span></span>
                                 <span></span>
@@ -55,6 +56,7 @@
                         </div>
                         <div class="first">
                             <div class="first-input">
+                                <i class="iconfont icon-xin"></i>
                                 <input type="text" placeholder="密码">
                                 <span></span>
                                 <span></span>
@@ -63,17 +65,16 @@
                         <div class="tip">
                             <span></span>
                         </div>
-                        <div class="first">
+                        <div class="first noborder">
                             <div class="waiceng clear">
                                 <div class="wangji right">
-                                    <a href="">忘记密码</a>
+                                    <a class="" href="">忘记密码</a>
                                 </div>
 
                                 <div class="jizhu left">
                                     <div class="checkbox">
-                                        <input type="checkbox">
-
-                                        <span>记住用户名</span>
+                                        <input id="remeber-name" type="checkbox">
+                                        <label for="remeber-name">记住用户名</label>
                                     </div>
                                 </div>
                             </div>
@@ -85,11 +86,43 @@
                             <span></span>
                         </div>
                         <div class="btn">
-                            <button>
-                                <span>登录</span>
+                            <button type="submit" class="btn-submit"  >
+                                <span class="ui-btn-loading-before">登录</span>
                             </button>
                         </div>
+                        
                     </div>
+                    <!-- 微信登录 -->
+                    <div class="other-login">
+                            <!-- icon -->
+                            <div class="icon-weixin clear">
+                                <i class="icon-line "></i>
+                                <i class="iconfont icon-xin "></i>
+                            </div>
+                            <!-- d第一排 -->
+                            <div class="link-common">
+                                <ul class="clear">
+                                    <li>新浪微博<i class="line"></i></li>
+                                    <li>QQ<i class="line"></i></li>
+                                    <li>支付宝</li>
+                                    <li class="active clear">
+                                        <span class="more left">更多</span>
+                                        <span class="shouqi left">收起</span>
+                                        <i class="iconfont icon-down left"></i>
+                                    </li>
+                                    <li>免费注册</li>
+                                </ul>
+                            </div>
+                            <!-- 隐藏部分 -->
+                            <ul class="login-links clear active">
+                                <li>网易<i class="line"></i></li>
+                                <li>人人网<i class="line"></i></li>
+                                <li>建行登录<i class="line"></i></li>
+                                <li>开心网<i class="line"></i></li>
+                                <li>中国移动</li>
+                                <li>翼支付</li>
+                            </ul>
+                        </div>
                 </div>
             </div>
         </div>
