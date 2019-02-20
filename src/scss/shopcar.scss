@@ -1,0 +1,353 @@
+@charset "utf-8";
+@import "./_base";
+#shopwrap {
+    width: 1425px;
+    .shopinner {
+        width: 1000px;
+        margin: 0 auto;
+        .shopproduct {
+            // margin-bottom: 40px;
+            padding-top: 22px;
+            color: #333;
+            font-size: 12px;
+            .shopshuoming {
+                width: 1000px;
+                padding: 11px 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin-top: -22px;
+                a {
+                    color: #333;
+                    font-size: 12px;
+                }
+            }
+        }
+        .leftpic {
+            .wrap {
+                width: 420px;
+                // height: 420px;
+                // position: relative;
+                // z-index: 99;
+                margin-bottom: 7px;
+                .spic {
+                    width: 420px;
+                    // position: relative;
+                    text-align: center;
+                    .imgbox {
+                        img {
+                            width: 420px;
+                            height: 420px;
+                        }
+                    }
+                }
+                .ulist {
+                    width: 420px;
+                    height: 64px;
+                    // overflow: hidden;
+                    text-align: center;
+                    .list {
+                        width: 420px;
+                        ul {
+                            width: 420px;
+                            li {
+                                width: 62px;
+                                height: 62px;
+                                margin: 4px 6px 0 0;
+                                float: left;
+                                cursor: pointer;
+                                overflow: hidden;
+                                // position: relative;
+                                border: 1px solid #f2f2f2;
+                                // background-color: #f7f7f7;
+                                &:hover {
+                                    border: 1px solid #df147f;
+                                }
+                                a {
+                                    display: block;
+                                    width: 62px;
+                                    height: 62px;
+                                    img {
+                                        width: 62px;
+                                        height: 62px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .bianhao {
+                    font-size: 0;
+                    padding: 12px 0;
+                    border-bottom: 1px #e2e2e2 dashed;
+                    position: relative;
+                    p {
+                        color: #999;
+                        line-height: 20px;
+                        display: inline-block;
+                        font-size: 12px;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                    .xingxingwai {
+                        line-height: 16px;
+                        cursor: pointer;
+                        width: 70px;
+                        padding: 1px 0 1px 2px;
+                        display: inline-block;
+                        font-size: 12px;
+                        margin-left: 18px;
+                        vertical-align: top;
+                        i {
+                            color: #df147f;
+                            font-weight: bold;
+                        }
+                        span {
+                            color: #999;
+                        }
+                    }
+                    .fen {
+                        right: 8px;
+                        top: 10px;
+                        height: 24px;
+                        position: absolute;
+                        .xiang {
+                            width: 95px;
+                            height: 24px;
+                            .dao {
+                                width: 95px;
+                                height: 24px;
+                                font-size: 0;
+                                display: inline-block;
+                                background: #fafafa;
+                                border: 1px solid #c2c2c2;
+                                border-radius: 2px;
+                                cursor: pointer;
+                                z-index: 100;
+                                transition: border .3s;
+                                i {
+                                    color: #999;
+                                    margin-left: 3px;
+                                }
+                                span {
+                                    font-size: 12px;
+                                    height: 22px;
+                                    line-height: 22px;
+                                    padding: 0 9px;
+                                    color: #333;
+                                }
+                                .jiantou {
+                                    position: absolute;
+                                    top: 10px;
+                                    right: 10px;
+                                    @include jiantou(4px);
+                                }
+                            }
+                        }
+                    }
+                }
+                .zhengpininner {
+                    padding: 15px 0;
+                    overflow: hidden;
+                    // position: relative;
+                    width: 420px;
+                    ul {
+                        width: 1000px;
+                        padding: 9px 0;
+                        li {
+                            position: relative;
+                            float: left;
+                            color: #bcb7ba;
+                            padding-left: 30px;
+                            width: 95px;
+                            text-align: center;
+                            font-size: 14px;
+                            height: 18px;
+                            line-height: 18px;
+                            border-right: 1px solid #e2e2e2;
+                            margin-right: 22px;
+                            &:nth-child(1) i {
+                                background-position: -360px -190px;
+                            }
+                            &:nth-child(2) i {
+                                background-position: -496px -190px;
+                                ;
+                            }
+                            &:nth-child(3) i {
+                                background-position: -326px -190px;
+                            }
+                            i {
+                                position: absolute;
+                                top: -7px;
+                                left: 0;
+                                display: block;
+                                width: 30px;
+                                height: 30px;
+                                background: url(https://shop.vipstatic.com/img/detail/detail-sprites-hash-ca10c0e2.png?9cbd6945) no-repeat;
+                            }
+                            a {
+                                color: #bcb7ba;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .rightcontent {
+            width: 550px;
+            position: relative;
+            z-index: 100;
+            .rightinner {
+                width: 550px;
+                height: 50px;
+                .shengyu {
+                    font-size: 12px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    line-height: 18px;
+                    background: #333;
+                    color: #fff;
+                    padding: 0 5px 0 13px;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                    .tianshu {
+                        position: relative;
+                        display: block;
+                        width: 150px;
+                        text-align: center;
+                        padding-right: 13px;
+                        background: url(https://shop.vipstatic.com/img/detail/detail_millis-hash-9da371da.gif?18609067) right 4px no-repeat;
+                    }
+                }
+                .musensen {
+                    color: #4d4d4d;
+                    margin-bottom: 10px;
+                    clear: both;
+                    .sen {
+                        width: 340px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-size: 12px;
+                        color: #777578;
+                        line-height: 22px;
+                        min-height: 22px;
+                    }
+                    .lin {
+                        font-size: 16px;
+                        color: #333;
+                        overflow: hidden;
+                        line-height: 20px;
+                        margin-top: 8px;
+                        margin-bottom: 8px;
+                        font-weight: 700;
+                    }
+                }
+                .fensebg {
+                    width: 550px;
+                    height: 85px;
+                    margin-bottom: 20px;
+                    padding-bottom: 15px;
+                    position: relative;
+                    background: url(https://shop.vipstatic.com/img/detail/detail_price_bg_l-hash-8ee789be.png?0d2291d1);
+                    .pre-piece {
+                        font-size: 48px;
+                        margin-left: 20px;
+                        display: inline-block;
+                        position: relative;
+                        color: #f43499;
+                        line-height: 1.2;
+                        margin-top: 13px;
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+                    .sec {
+                        // position: relative;
+                        vertical-align: top;
+                        margin-top: 24px;
+                        display: inline-block;
+                        .sec-shang {
+                            margin: 0 16px 0 8px;
+                            span {
+                                font-size: 12px;
+                                color: #f43499;
+                                border-radius: 3px;
+                                text-align: center;
+                                border: 1px solid #f43499;
+                                padding: 0 5px;
+                            }
+                        }
+                        .cn {
+                            padding: 0 20px 0 10px;
+                            color: #666;
+                            font-size: 14px;
+                            del {
+                                color: #666;
+                                font-size: 14px;
+                                text-decoration: line-through;
+                                font-weight: lighter;
+                            }
+                        }
+                    }
+                }
+                dt {
+                    font-size: 12px;
+                    width: 40px;
+                    text-align: left;
+                    color: #999;
+                    line-height: 32px;
+                    overflow: hidden;
+                }
+                .from {
+                    .song {
+                        width: 250px;
+                        border: 1px solid #ccc;
+                        cursor: pointer;
+                        background-color: #fff;
+                        position: relative;
+                        p {
+                            font-size: 12px;
+                            height: 30px;
+                            line-height: 30px;
+                            padding: 0 35px 0 10px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                        }
+                        i {
+                            position: absolute;
+                            right: 10px;
+                            top: 2px;
+                            color: #b3b3b3;
+                        }
+                    }
+                    .yun {
+                        float: left;
+                        font-size: 12px;
+                        width: 40px;
+                        text-align: left;
+                        color: #999;
+                        line-height: 32px;
+                        overflow: hidden;
+                        em {
+                            width: 40px;
+                            display: inline-block;
+                            height: 18px;
+                            color: #fff;
+                            background-color: #f3b241;
+                            padding: 0 2px;
+                            line-height: 16px;
+                            margin-right: 5px;
+                        }
+                        .ding {
+                            color: #666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,286 @@
+#shopwrap {
+  width: 1425px; }
+#shopwrap .shopinner {
+  width: 1000px;
+  margin: 0 auto; }
+#shopwrap .shopinner .shopproduct {
+  padding-top: 22px;
+  color: #333;
+  font-size: 12px; }
+#shopwrap .shopinner .shopproduct .shopshuoming {
+  width: 1000px;
+  padding: 11px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: -22px; }
+#shopwrap .shopinner .shopproduct .shopshuoming a {
+  color: #333;
+  font-size: 12px; }
+#shopwrap .shopinner .leftpic .wrap {
+  width: 420px;
+  margin-bottom: 7px; }
+#shopwrap .shopinner .leftpic .wrap .spic {
+  width: 420px;
+  text-align: center; }
+#shopwrap .shopinner .leftpic .wrap .spic .imgbox img {
+  width: 420px;
+  height: 420px; }
+#shopwrap .shopinner .leftpic .wrap .ulist {
+  width: 420px;
+  height: 64px;
+  text-align: center; }
+#shopwrap .shopinner .leftpic .wrap .ulist .list {
+  width: 420px; }
+#shopwrap .shopinner .leftpic .wrap .ulist .list ul {
+  width: 420px; }
+#shopwrap .shopinner .leftpic .wrap .ulist .list ul li {
+  width: 62px;
+  height: 62px;
+  margin: 4px 6px 0 0;
+  float: left;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #f2f2f2; }
+#shopwrap .shopinner .leftpic .wrap .ulist .list ul li:hover {
+  border: 1px solid #df147f; }
+#shopwrap .shopinner .leftpic .wrap .ulist .list ul li a {
+  display: block;
+  width: 62px;
+  height: 62px; }
+#shopwrap .shopinner .leftpic .wrap .ulist .list ul li a img {
+  width: 62px;
+  height: 62px; }
+#shopwrap .shopinner .leftpic .wrap .bianhao {
+  font-size: 0;
+  padding: 12px 0;
+  border-bottom: 1px #e2e2e2 dashed;
+  position: relative; }
+#shopwrap .shopinner .leftpic .wrap .bianhao p {
+  color: #999;
+  line-height: 20px;
+  display: inline-block;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+#shopwrap .shopinner .leftpic .wrap .bianhao .xingxingwai {
+  line-height: 16px;
+  cursor: pointer;
+  width: 70px;
+  padding: 1px 0 1px 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 18px;
+  vertical-align: top; }
+#shopwrap .shopinner .leftpic .wrap .bianhao .xingxingwai i {
+  color: #df147f;
+  font-weight: bold; }
+#shopwrap .shopinner .leftpic .wrap .bianhao .xingxingwai span {
+  color: #999; }
+#shopwrap .shopinner .leftpic .wrap .bianhao .fen {
+  right: 8px;
+  top: 10px;
+  height: 24px;
+  position: absolute; }
+#shopwrap .shopinner .leftpic .wrap .bianhao .fen .xiang {
+  width: 95px;
+  height: 24px; }
+#shopwrap .shopinner .leftpic .wrap .bianhao .fen .xiang .dao {
+  width: 95px;
+  height: 24px;
+  font-size: 0;
+  display: inline-block;
+  background: #fafafa;
+  border: 1px solid #c2c2c2;
+  border-radius: 2px;
+  cursor: pointer;
+  z-index: 100;
+  transition: border .3s; }
+#shopwrap .shopinner .leftpic .wrap .bianhao .fen .xiang .dao i {
+  color: #999;
+  margin-left: 3px; }
+#shopwrap .shopinner .leftpic .wrap .bianhao .fen .xiang .dao span {
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 9px;
+  color: #333; }
+#shopwrap .shopinner .leftpic .wrap .bianhao .fen .xiang .dao .jiantou {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-width: 4px;
+  border-color: #999 transparent transparent transparent;
+  border-style: solid dashed dotted dashed;
+  vertical-align: top; }
+#shopwrap .shopinner .leftpic .wrap .zhengpininner {
+  padding: 15px 0;
+  overflow: hidden;
+  width: 420px; }
+#shopwrap .shopinner .leftpic .wrap .zhengpininner ul {
+  width: 1000px;
+  padding: 9px 0; }
+#shopwrap .shopinner .leftpic .wrap .zhengpininner ul li {
+  position: relative;
+  float: left;
+  color: #bcb7ba;
+  padding-left: 30px;
+  width: 95px;
+  text-align: center;
+  font-size: 14px;
+  height: 18px;
+  line-height: 18px;
+  border-right: 1px solid #e2e2e2;
+  margin-right: 22px; }
+#shopwrap .shopinner .leftpic .wrap .zhengpininner ul li:nth-child(1) i {
+  background-position: -360px -190px; }
+#shopwrap .shopinner .leftpic .wrap .zhengpininner ul li:nth-child(2) i {
+  background-position: -496px -190px; }
+#shopwrap .shopinner .leftpic .wrap .zhengpininner ul li:nth-child(3) i {
+  background-position: -326px -190px; }
+#shopwrap .shopinner .leftpic .wrap .zhengpininner ul li i {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(https://shop.vipstatic.com/img/detail/detail-sprites-hash-ca10c0e2.png?9cbd6945) no-repeat; }
+#shopwrap .shopinner .leftpic .wrap .zhengpininner ul li a {
+  color: #bcb7ba; }
+#shopwrap .shopinner .rightcontent {
+  width: 550px;
+  position: relative;
+  z-index: 100; }
+#shopwrap .shopinner .rightcontent .rightinner {
+  width: 550px;
+  height: 50px; }
+#shopwrap .shopinner .rightcontent .rightinner .shengyu {
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 18px;
+  background: #333;
+  color: #fff;
+  padding: 0 5px 0 13px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px; }
+#shopwrap .shopinner .rightcontent .rightinner .shengyu .tianshu {
+  position: relative;
+  display: block;
+  width: 150px;
+  text-align: center;
+  padding-right: 13px;
+  background: url(https://shop.vipstatic.com/img/detail/detail_millis-hash-9da371da.gif?18609067) right 4px no-repeat; }
+#shopwrap .shopinner .rightcontent .rightinner .musensen {
+  color: #4d4d4d;
+  margin-bottom: 10px;
+  clear: both; }
+#shopwrap .shopinner .rightcontent .rightinner .musensen .sen {
+  width: 340px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: #777578;
+  line-height: 22px;
+  min-height: 22px; }
+#shopwrap .shopinner .rightcontent .rightinner .musensen .lin {
+  font-size: 16px;
+  color: #333;
+  overflow: hidden;
+  line-height: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 700; }
+#shopwrap .shopinner .rightcontent .rightinner .fensebg {
+  width: 550px;
+  height: 85px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  position: relative;
+  background: url(https://shop.vipstatic.com/img/detail/detail_price_bg_l-hash-8ee789be.png?0d2291d1); }
+#shopwrap .shopinner .rightcontent .rightinner .fensebg .pre-piece {
+  font-size: 48px;
+  margin-left: 20px;
+  display: inline-block;
+  position: relative;
+  color: #f43499;
+  line-height: 1.2;
+  margin-top: 13px; }
+#shopwrap .shopinner .rightcontent .rightinner .fensebg .pre-piece i {
+  font-size: 20px; }
+#shopwrap .shopinner .rightcontent .rightinner .fensebg .sec {
+  vertical-align: top;
+  margin-top: 24px;
+  display: inline-block; }
+#shopwrap .shopinner .rightcontent .rightinner .fensebg .sec .sec-shang {
+  margin: 0 16px 0 8px; }
+#shopwrap .shopinner .rightcontent .rightinner .fensebg .sec .sec-shang span {
+  font-size: 12px;
+  color: #f43499;
+  border-radius: 3px;
+  text-align: center;
+  border: 1px solid #f43499;
+  padding: 0 5px; }
+#shopwrap .shopinner .rightcontent .rightinner .fensebg .sec .cn {
+  padding: 0 20px 0 10px;
+  color: #666;
+  font-size: 14px; }
+#shopwrap .shopinner .rightcontent .rightinner .fensebg .sec .cn del {
+  color: #666;
+  font-size: 14px;
+  text-decoration: line-through;
+  font-weight: lighter; }
+#shopwrap .shopinner .rightcontent .rightinner dt {
+  font-size: 12px;
+  width: 40px;
+  text-align: left;
+  color: #999;
+  line-height: 32px;
+  overflow: hidden; }
+#shopwrap .shopinner .rightcontent .rightinner .from .song {
+  width: 250px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background-color: #fff;
+  position: relative; }
+#shopwrap .shopinner .rightcontent .rightinner .from .song p {
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 35px 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+#shopwrap .shopinner .rightcontent .rightinner .from .song i {
+  position: absolute;
+  right: 10px;
+  top: 2px;
+  color: #b3b3b3; }
+#shopwrap .shopinner .rightcontent .rightinner .from .yun {
+  float: left;
+  font-size: 12px;
+  width: 40px;
+  text-align: left;
+  color: #999;
+  line-height: 32px;
+  overflow: hidden; }
+#shopwrap .shopinner .rightcontent .rightinner .from .yun em {
+  width: 40px;
+  display: inline-block;
+  height: 18px;
+  color: #fff;
+  background-color: #f3b241;
+  padding: 0 2px;
+  line-height: 16px;
+  margin-right: 5px; }
+#shopwrap .shopinner .rightcontent .rightinner .from .yun .ding {
+  color: #666; }
+
+/*# sourceMappingURL=shopcar.css.map */
