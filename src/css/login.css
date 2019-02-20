@@ -114,9 +114,7 @@
 .bgimg .content .denglu .from .input .waiceng .jizhu {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 5px;
-  font-size: 0;
-  line-height: 0; }
+  margin-right: 5px; }
 .bgimg .content .denglu .from .input .waiceng .jizhu input {
   width: 19px;
   height: 16px; }
