@@ -11,7 +11,8 @@
 #header .headertop .navtop {
   width: 1000px;
   height: 28px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
 #header .headertop .navtop .jiantou {
   position: absolute;
   top: 10px;
@@ -28,7 +29,7 @@
   position: relative;
   vertical-align: top;
   color: #333; }
-#header .headertop .navtop .waizi {
+#header .headertop .navtop .hangzou .waizi {
   position: relative;
   width: 46px;
   height: 27px;
@@ -38,23 +39,96 @@
   z-index: 1;
   padding-left: 15px;
   padding-right: 23px; }
+#header .headertop .navtop .hangzou .city {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 470px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  z-index: 1111;
+  display: none; }
+#header .headertop .navtop .hangzou .city .city-cha {
+  position: absolute;
+  right: 26px;
+  top: 10px;
+  font-size: 18px; }
+#header .headertop .navtop .hangzou .city.show {
+  display: block; }
+#header .headertop .navtop .hangzou .city a {
+  color: #333; }
+#header .headertop .navtop .hangzou .city .city-p {
+  padding: 8px 0; }
+#header .headertop .navtop .hangzou .city .tap-shang {
+  height: 29px; }
+#header .headertop .navtop .hangzou .city .tap-shang .shang-ul {
+  width: 470px;
+  height: 30px; }
+#header .headertop .navtop .hangzou .city .tap-shang .shang-ul li {
+  display: inline;
+  float: left;
+  margin-left: -1px;
+  width: 68px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 28px;
+  vertical-align: top;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8; }
+#header .headertop .navtop .hangzou .city .tap-shang .shang-ul li.active {
+  background-color: #fff;
+  border-top: 2px solid #f10180;
+  border-bottom: none; }
+#header .headertop .navtop .hangzou .city .tap-xia {
+  padding: 20px 13px 18px;
+  border-top: 1px solid #ccc; }
+#header .headertop .navtop .hangzou .city .tap-xia a {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 20px;
+  border: 1px solid #fff; }
+#header .headertop .navtop .hangzou .city .tap-xia a:hover {
+  border: 1px solid #f10180;
+  color: #f10180; }
+#header .headertop .navtop .hangzou .city .tap-xia .xia-ul-1 {
+  width: 408px; }
+#header .headertop .navtop .hangzou .city .tap-xia .xia-ul-1 li {
+  width: 68px;
+  float: left;
+  margin-bottom: 2px; }
+#header .headertop .navtop .hangzou .city .tap-xia .xia-ul-2 {
+  width: 412px;
+  display: none; }
+#header .headertop .navtop .hangzou .city .tap-xia .xia-ul-2 li {
+  width: 103px;
+  float: left;
+  margin-bottom: 2px; }
+#header .headertop .navtop .hangzou .city .tap-xia .xia-ul-1 a.show, #header .headertop .navtop .hangzou .city .tap-xia .xia-ul-2 a.show {
+  color: #fff;
+  background-color: #f10180; }
 #header .headertop .navtop .topnavul {
   float: right; }
-#header .headertop .navtop .topnavul li {
+#header .headertop .navtop .topnavul > li {
   float: left;
   height: 28px;
   line-height: 28px;
   padding-right: 20px;
   padding-left: 10px;
-  position: relative; }
-#header .headertop .navtop .topnavul li .qiandao {
+  position: relative;
+  border: 1px solid transparent; }
+#header .headertop .navtop .topnavul > li .qiandao {
   display: inline-block;
   width: 15px;
   height: 18px;
-  background: url(../img/2.png) no-repeat;
-  margin-right: 3px;
-  background-position: -95px -208px; }
-#header .headertop .navtop .topnavul li .jiantou2 {
+  background: url(https://shop.vipstatic.com/img/common/header_sign-hash-0459d02c.gif) no-repeat;
+  margin-right: 3px; }
+#header .headertop .navtop .topnavul > li .jiantou2 {
   margin-top: 12px;
   display: inline-block;
   width: 0;
@@ -63,18 +137,18 @@
   border-color: #999 transparent transparent transparent;
   border-style: solid dashed dotted dashed;
   vertical-align: top; }
-#header .headertop .navtop .topnavul li a {
+#header .headertop .navtop .topnavul > li a {
   color: #666; }
-#header .headertop .navtop .topnavul li a:hover {
+#header .headertop .navtop .topnavul > li a:hover {
   color: #df147f; }
-#header .headertop .navtop .topnavul li em {
+#header .headertop .navtop .topnavul > li em {
   background: url(../img/2.png)-270px -184px no-repeat;
   width: 16px;
   height: 16px;
   position: absolute;
   top: 6px;
   right: 0; }
-#header .headertop .navtop .topnavul li .phone {
+#header .headertop .navtop .topnavul > li .phone {
   width: 10px;
   height: 14px;
   background: url(../img/2.png) -294px -142px no-repeat;
@@ -83,6 +157,118 @@
   margin-right: 3px;
   margin-top: -3px;
   display: inline-block; }
+#header .headertop .navtop .topnavul .topnavul-li1.active {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-bottom: transparent; }
+#header .headertop .navtop .topnavul .topnavul-li1.active .nihao {
+  display: block;
+  border: 1px solid #ccc; }
+#header .headertop .navtop .topnavul .topnavul-li1.active .nihao p:hover {
+  color: #f10180; }
+#header .headertop .navtop .topnavul .topnavul-li1.active em {
+  display: none; }
+#header .headertop .navtop .topnavul .topnavul-li1 .nihao {
+  width: 280px;
+  height: 175px;
+  color: #333;
+  position: absolute;
+  background-color: #fff;
+  z-index: 111;
+  display: none;
+  left: -1px;
+  top: 27px; }
+#header .headertop .navtop .topnavul .topnavul-li1 .nihao .ya {
+  position: absolute;
+  width: 67px;
+  height: 2px;
+  background-color: #fff;
+  top: -1px;
+  left: 0; }
+#header .headertop .navtop .topnavul .topnavul-li1 .nihao .nihaoshang {
+  padding-top: 25px;
+  padding-left: 20px;
+  border-bottom: 1px dashed #ddd; }
+#header .headertop .navtop .topnavul .topnavul-li1 .nihao .nihaoxia ul {
+  padding-top: 3px;
+  padding-left: 25px; }
+#header .headertop .navtop .topnavul .topnavul-li1 .nihao .nihaoxia ul li {
+  width: 120px;
+  float: left;
+  padding: 3px 0; }
+#header .headertop .navtop .topnavul .topnavul-li5 .mytemai {
+  position: absolute;
+  z-index: 111;
+  width: 120px;
+  height: 100px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: 0;
+  text-align: center;
+  padding-top: 4px; }
+#header .headertop .navtop .topnavul .topnavul-li5 .mytemai .ya {
+  width: 90px; }
+#header .headertop .navtop .topnavul .topnavul-li5 .mytemai p {
+  width: 100px;
+  padding: 0px 5px; }
+#header .headertop .navtop .topnavul .topnavul-li6 .huiyuan {
+  width: 102px;
+  height: 70px;
+  padding-top: 5px; }
+#header .headertop .navtop .topnavul .topnavul-li6 .huiyuan p {
+  padding-left: 10px; }
+#header .headertop .navtop .topnavul .topnavul-li6 .huiyuan .ya {
+  width: 102px; }
+#header .headertop .navtop .topnavul .topnavul-li7 .lianxi {
+  width: 90px;
+  height: 120px;
+  padding-top: 5px; }
+#header .headertop .navtop .topnavul .topnavul-li7 .lianxi p {
+  padding-left: 10px; }
+#header .headertop .navtop .topnavul .topnavul-li7 .lianxi .ya {
+  width: 90px; }
+#header .headertop .navtop .topnavul .topnavul-li8 .nihao {
+  left: -107px; }
+#header .headertop .navtop .topnavul .topnavul-li8 .erweima {
+  width: 190px;
+  height: auto;
+  padding-top: 20px;
+  text-align: center; }
+#header .headertop .navtop .topnavul .topnavul-li8 .erweima img {
+  width: 160px;
+  height: 160px;
+  display: block;
+  padding-left: 19px; }
+#header .headertop .navtop .topnavul .topnavul-li8 .erweima .ya {
+  width: 84px;
+  left: 106px; }
+#header .headertop .navtop .topnavul .topnavul-li8 .erweima span {
+  font-size: 16px;
+  font-weight: bold; }
+#header .headertop .navtop .topnavul .topnavul-li9 .nihao {
+  left: -215px;
+  width: 280px;
+  height: auto;
+  padding-top: 10px;
+  text-align: center; }
+#header .headertop .navtop .topnavul .topnavul-li9 .nihao .ya {
+  width: 66px;
+  left: 214px; }
+#header .headertop .navtop .topnavul .topnavul-li9 .nihao .nihao-li {
+  margin: 0 20px;
+  padding: 10px 0; }
+#header .headertop .navtop .topnavul .topnavul-li9 .nihao .nihao-li.br-b {
+  border-bottom: 1px solid #ccc; }
+#header .headertop .navtop .topnavul .topnavul-li9 .nihao .li-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #000;
+  text-align: left; }
+#header .headertop .navtop .topnavul .topnavul-li9 .nihao .li-item > li {
+  float: left;
+  width: 60px;
+  font-size: 12px;
+  color: #333; }
 #header .headerlogo {
   height: 100px;
   padding-top: 20px;

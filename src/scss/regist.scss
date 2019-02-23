@@ -1,2 +1,187 @@
 @charset "utf-8";
 @import "./_base";
+.headerlogo {
+    width: 1425px;
+    height: 100px;
+    padding-top: 20px;
+    .logoinner {
+        position: relative;
+        width: $width;
+        height: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        .logo {
+            display: inline;
+            position: relative;
+            float: left;
+            z-index: 1;
+            margin-right: 1px;
+            min-width: 140px;
+            height: 100px;
+            .logoimg {
+                margin-left: -20px;
+                min-width: 160px;
+                overflow: hidden;
+                img {
+                    width: 160px;
+                    height: 100px;
+                }
+            }
+        }
+        .serve {
+            background: url(https://member-ssl.vipstatic.com/img/passport/sprites-hash-21600f5c.png?131e7010) 0 0 no-repeat;
+            width: 304px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+.bgimg {
+    background-image: url(https://a.vpimg2.com/upload/flow/2019/01/29/88/15487540172274.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 650px;
+    width: 1425px;
+    .content {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 50px 20px;
+        width: 1000px;
+        .denglu {
+            width: 360px;
+            height: 504px;
+            border-radius: 2px;
+            background-color: #fff;
+            .from {
+                width: 360px;
+                .nav {
+                    border-bottom: 1px solid #e0e0e0;
+                    font-size: 0;
+                    .navleft {
+                        position: relative;
+                        display: inline-block;
+                        width: 180px;
+                        vertical-align: top;
+                        text-align: center;
+                        color: #666;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 50px;
+                        cursor: pointer;
+                        overflow: hidden;
+                        i {
+                            position: absolute;
+                            top: 15px;
+                            right: 0;
+                            z-index: 1;
+                            width: 1px;
+                            height: 20px;
+                            background-color: #ccc;
+                            content: "";
+                            font-size: 0;
+                            line-height: 0;
+                        }
+                    }
+                    .navright {
+                        width: 180px;
+                        vertical-align: top;
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 50px;
+                        color: #666;
+                        overflow: hidden;
+                        a {
+                            color: #f10180;
+                        }
+                    }
+                }
+                .input {
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 300px;
+                    padding-top: 10px;
+                    .first {
+                        width: 300px;
+                        margin-top: 30px;
+                        position: relative;
+                        display: inline-block;
+                        border: 1px solid #b2b2b2;
+                        border-radius: 3px;
+                        &.noborder {
+                            border: 0;
+                            // margin-top:10px;
+                        }
+                        .iconfont {
+                            margin: 0 0 0 10px;
+                            // line-height: 42px;
+                            font-size: 12px;
+                            color: #aaa;
+                        }
+                        input {
+                            width: 248px;
+                            height: 44px;
+                            line-height: 44px;
+                            border: 0;
+                        }
+                    }
+                    .agreebox {
+                        margin-top: 20px;
+                        margin-bottom: 30px;
+                        span {
+                            display: block;
+                        }
+                        .agree {
+                            color: #666;
+                            vertical-align: middle;
+                            font-size: 12px;
+                            display: inline-block;
+                            width: 276px;
+                            line-height: 1.5;
+                            a {
+                                color: #1d94d1;
+                            }
+                        }
+                    }
+                    .btn {
+                        height: 46px;
+                        padding: 0;
+                        .btn-submit {
+                            overflow: hidden;
+                            border: 0;
+                            display: inline-block;
+                            border-radius: 3px;
+                            text-decoration: none;
+                            text-align: center;
+                            min-width: 72px;
+                            background-color: #f10180;
+                            color: #fff;
+                            margin-top: 4px;
+                            width: 300px;
+                            cursor: pointer;
+                            outline: 0;
+                            height: 46px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    width: 1425px;
+    font-size: 12px;
+    .foot {
+        width: 1000px;
+        margin: 0 auto;
+        height: 78px;
+        line-height: 78px;
+        p {
+            color: #666;
+            text-align: center;
+        }
+    }
+}

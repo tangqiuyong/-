@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "./_base";
+
 #header {
     width: 1425px;
     height: 190px;
@@ -7,53 +8,177 @@
     position: relative;
     font-size: $font;
     display: inline-block;
+
     .headertop {
         height: $height;
         background-color: #f5f5f5;
+
         .navtop {
             width: $width;
             height: $height;
             margin: $margin;
+            position: relative;
+
+
+
             .jiantou {
                 position: absolute;
                 top: 10px;
                 right: 10px;
                 @include jiantou(4px);
             }
+
             .hangzou {
                 float: left;
                 position: relative;
                 vertical-align: top;
                 color: #333;
+
+                .waizi {
+                    position: relative;
+                    width: 46px;
+                    height: 27px;
+                    line-height: 27px;
+                    cursor: pointer;
+                    border-width: 1px 1px 0;
+                    z-index: 1;
+                    padding-left: 15px;
+                    padding-right: 23px;
+                }
+
+                .city {
+                    position: absolute;
+                    top: 28px;
+                    left: 0;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    width: 470px;
+                    background-color: #fff;
+                    border: 1px solid #ccc;
+                    z-index: 1111;
+                    display: none;
+
+                    .city-cha {
+                        position: absolute;
+                        right: 26px;
+                        top: 10px;
+                        font-size: 18px;
+                    }
+
+                    &.show {
+                        display: block;
+                    }
+
+                    & a {
+                        color: #333;
+                    }
+
+                    .city-p {
+                        padding: 8px 0;
+                    }
+
+                    .tap-shang {
+                        height: 29px;
+
+                        .shang-ul {
+                            width: 470px;
+                            height: 30px;
+
+                            li {
+                                // position: relative;
+                                // z-index: 2;
+                                // font-weight: 700;
+                                // background-color: #fff;
+                                display: inline;
+                                float: left;
+                                margin-left: -1px;
+                                width: 68px;
+                                text-align: center;
+                                cursor: pointer;
+                                line-height: 28px;
+                                vertical-align: top;
+                                border: 1px solid #ccc;
+                                background-color: #f8f8f8;
+
+                                &.active {
+                                    background-color: #fff;
+                                    border-top: 2px solid #f10180;
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .tap-xia {
+                        padding: 20px 13px 18px;
+                        border-top: 1px solid #ccc;
+
+                        a {
+                            display: inline-block;
+                            padding-right: 10px;
+                            padding-left: 10px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            line-height: 20px;
+                            border: 1px solid #fff;
+
+                            &:hover {
+                                border: 1px solid #f10180;
+                                color: #f10180;
+                            }
+                        }
+
+                        .xia-ul-1 {
+                            width: 408px;
+
+                            li {
+                                width: 68px;
+                                float: left;
+                                margin-bottom: 2px;
+                            }
+                        }
+
+                        .xia-ul-2 {
+                            width: 412px;
+                            display: none;
+
+                            li {
+                                width: 103px;
+                                float: left;
+                                margin-bottom: 2px;
+                            }
+                        }
+
+                        .xia-ul-1 a.show,
+                        .xia-ul-2 a.show {
+                            color: #fff;
+                            background-color: #f10180;
+                        }
+                    }
+                }
             }
-            .waizi {
-                position: relative;
-                width: 46px;
-                height: 27px;
-                line-height: 27px;
-                cursor: pointer;
-                border-width: 1px 1px 0;
-                z-index: 1;
-                padding-left: 15px;
-                padding-right: 23px;
-            }
+
             .topnavul {
                 float: right;
-                li {
+
+                >li {
                     float: left;
                     height: $height;
                     line-height: 28px;
                     padding-right: 20px;
                     padding-left: 10px;
                     position: relative;
-                    .qiandao {
+                    border: 1px solid transparent;
+
+                    & .qiandao {
                         display: inline-block;
                         width: 15px;
                         height: 18px;
-                        background: url(../img/2.png) no-repeat;
+                        background: url(https://shop.vipstatic.com/img/common/header_sign-hash-0459d02c.gif) no-repeat;
                         margin-right: 3px;
-                        background-position: -95px -208px;
                     }
+
                     // .wp-sign-icon {
                     //     position: relative;
                     //     top: 2px;
@@ -92,12 +217,15 @@
                         margin-top: 12px;
                         @include jiantou(4px);
                     }
+
                     a {
                         color: #666;
+
                         &:hover {
                             color: $baseColor;
                         }
                     }
+
                     em {
                         background: url(../img/2.png)-270px -184px no-repeat;
                         width: 16px;
@@ -106,6 +234,7 @@
                         top: 6px;
                         right: 0;
                     }
+
                     .phone {
                         width: 10px;
                         height: 14px;
@@ -117,17 +246,208 @@
                         display: inline-block;
                     }
                 }
+
+                .topnavul-li1 {
+                    &.active {
+                        border: 1px solid #ccc;
+                        background-color: #fff;
+                        border-bottom: transparent;
+
+                        .nihao {
+                            display: block;
+                            border: 1px solid #ccc;
+
+                            p:hover {
+                                color: #f10180;
+
+                            }
+                        }
+
+                        em {
+                            display: none;
+                        }
+                    }
+
+                    .nihao {
+                        width: 280px;
+                        height: 175px;
+                        color: #333;
+                        position: absolute;
+                        background-color: #fff;
+                        z-index: 111;
+                        display: none;
+                        left: -1px;
+                        top: 27px;
+
+                        .ya {
+                            position: absolute;
+                            width: 67px;
+                            height: 2px;
+                            background-color: #fff;
+                            top: -1px;
+                            left: 0;
+                        }
+
+                        .nihaoshang {
+                            padding-top: 25px;
+                            padding-left: 20px;
+                            border-bottom: 1px dashed #ddd;
+                        }
+
+                        .nihaoxia {
+                            ul {
+                                padding-top: 3px;
+                                padding-left: 25px;
+
+                                li {
+                                    width: 120px;
+                                    float: left;
+                                    padding: 3px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .topnavul-li5 {
+                    .mytemai {
+                        position: absolute;
+                        z-index: 111;
+                        width: 120px;
+                        height: 100px;
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        border-top: 0;
+                        text-align: center;
+                        padding-top: 4px;
+
+                        .ya {
+                            width: 90px;
+                        }
+
+                        p {
+                            width: 100px;
+                            padding: 0px 5px;
+
+                        }
+                    }
+                }
+
+                .topnavul-li6 {
+                    .huiyuan {
+                        width: 102px;
+                        height: 70px;
+                        padding-top: 5px;
+
+                        p {
+                            padding-left: 10px;
+                        }
+
+                        .ya {
+                            width: 102px;
+                        }
+
+                    }
+                }
+
+                .topnavul-li7 {
+                    .lianxi {
+                        width: 90px;
+                        height: 120px;
+                        padding-top: 5px;
+
+                        p {
+                            padding-left: 10px;
+                        }
+
+                        .ya {
+                            width: 90px;
+                        }
+                    }
+                }
+
+                .topnavul-li8 {
+                    .nihao {
+                        left: -107px;
+                    }
+
+                    .erweima {
+                        width: 190px;
+                        height: auto;
+                        padding-top: 20px;
+                        text-align: center;
+
+                        img {
+                            width: 160px;
+                            height: 160px;
+                            display: block;
+                            padding-left: 19px;
+                        }
+
+                        .ya {
+                            width: 84px;
+                            left: 106px;
+                        }
+
+                        span {
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .topnavul-li9 {
+                    .nihao {
+                        left: -215px;
+                        width: 280px;
+                        height: auto;
+                        padding-top: 10px;
+                        text-align: center;
+
+                        .ya {
+                            width: 66px;
+                            left: 214px;
+                        }
+                        .nihao-li{
+                            margin:0 20px;
+                            padding:10px 0;
+                            &.br-b{
+                                border-bottom:1px solid #ccc; 
+                            }
+                        }
+                        .li-title{
+                            font-weight: bold;
+                            font-size: 14px;
+                            color: #000;
+                            text-align: left;
+                        }
+                        .li-item{
+                            // width: 280px;
+                            // padding: 5px  0;
+                            >li{
+                                float: left;
+                                width: 60px;
+                                font-size: 12px;
+                                color: #333;
+                            }
+                            
+                        }
+                    }
+                }
             }
         }
     }
+
     .headerlogo {
         height: 100px;
         padding-top: 20px;
         background-color: #fff;
+
         .logoinner {
             width: $width;
             height: 100px;
             margin: $margin;
+
             .logo {
                 display: inline;
                 position: relative;
@@ -136,21 +456,25 @@
                 margin-right: 1px;
                 min-width: 140px;
                 height: 100px;
+
                 .logoimg {
                     margin-left: -20px;
                     min-width: 160px;
                     overflow: hidden;
+
                     img {
                         width: 160px;
                         height: 100px;
                     }
                 }
             }
+
             .serve {
                 a {
                     display: inline-block;
                     height: 100px;
                 }
+
                 img {
                     vertical-align: top;
                     width: 304px;
@@ -158,12 +482,14 @@
                     z-index: 1;
                 }
             }
+
             .search {
                 display: inline;
                 position: relative;
                 z-index: 10;
                 margin-top: 33px;
                 width: 389px;
+
                 .search-form {
                     position: relative;
                     z-index: 2;
@@ -172,9 +498,11 @@
                     border: 1px solid #fa2a83;
                     border-radius: 2px;
                     background-color: #fff;
+
                     .icon-search {
                         @include sc(24px, #fff);
                     }
+
                     input {
                         padding: 2px 12px;
                         width: 311px;
@@ -187,6 +515,7 @@
                         border-bottom-left-radius: 2px;
                         background-color: #fff;
                     }
+
                     a {
                         position: absolute;
                         top: 0;
@@ -201,10 +530,12 @@
                     }
                 }
             }
+
             .cart {
                 margin-top: 33px;
                 margin-left: 15px;
                 width: 96px;
+
                 .cart-num {
                     width: 96px;
                     height: 32px;
@@ -213,10 +544,13 @@
                     border: 1px solid #ccc;
                     background-color: #f6f7f9;
                     border-radius: 2px;
+
                     i {
                         margin-left: 4px;
                     }
+
                     span {}
+
                     .num {
                         top: 8px;
                         right: 3px;
@@ -241,12 +575,15 @@
     top: 3px;
     z-index: 3;
     ;
+
     .navinner {
         width: $width;
         margin: $margin;
+
         .navinner-ul {
             height: 43px;
         }
+
         .navinner-ul>li {
             height: 43px;
             font-size: 16px;
@@ -254,29 +591,35 @@
             text-align: center;
             float: left;
             padding: 0 10px;
+
             .icon-down {
                 font-size: 12px;
                 padding-left: 4px;
             }
+
             a {
                 color: #333;
             }
+
             &.xuanzhong {
                 a {
                     color: $baseColor;
                     font-weight: bolder;
                 }
             }
+
             &.navinner-li {
                 background-color: #f10180;
                 width: 156px;
                 height: 43px;
                 margin-right: 20px;
+
                 .icon-leimu {
                     font-size: 14px;
                     font-weight: bold;
                     margin-right: 4px;
                 }
+
                 a {
                     color: #fff;
                 }

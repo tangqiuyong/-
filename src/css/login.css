@@ -1,8 +1,7 @@
 .headerlogo {
   width: 1425px;
   height: 100px;
-  padding-top: 20px;
-  background-color: #fff; }
+  padding-top: 20px; }
 .headerlogo .logoinner {
   position: relative;
   width: 1000px;
@@ -43,8 +42,7 @@
   margin-left: auto;
   padding: 50px 20px;
   min-height: 550px;
-  width: 1000px;
-  background-color: bisque; }
+  width: 1000px; }
 .bgimg .content .denglu {
   width: 360px;
   border-radius: 2px;
@@ -116,6 +114,10 @@
   height: 40px;
   color: #333;
   font-size: 12px; }
+.bgimg .content .denglu .from .input .waiceng .wangji a {
+  color: #333; }
+.bgimg .content .denglu .from .input .waiceng .wangji a:hover {
+  color: #f10180; }
 .bgimg .content .denglu .from .input .waiceng .jizhu {
   display: inline-block;
   vertical-align: middle;
@@ -153,12 +155,22 @@
   line-height: 40px;
   text-align: center;
   position: relative; }
+.bgimg .content .denglu .from .other-login .icon-weixin a {
+  display: inline-block;
+  width: 40px;
+  height: 40px; }
+.bgimg .content .denglu .from .other-login .icon-weixin a span {
+  background-image: url(https://member-ssl.vipstatic.com/img/passport/sprites-hash-21600f5c.png?131e7010);
+  background-position: -308px -161px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: relative; }
 .bgimg .content .denglu .from .other-login .icon-weixin .icon-line {
   display: inline-block;
   height: 1px;
   background: #ddd;
   width: 100%;
-  z-index: 1;
   position: absolute;
   left: 0;
   top: 19px; }
@@ -172,7 +184,7 @@
 .bgimg .content .denglu .from .other-login .link-common {
   color: #333;
   font-size: 12px;
-  padding-bottom: 30px; }
+  padding-bottom: 10px; }
 .bgimg .content .denglu .from .other-login .link-common ul > li {
   float: left;
   padding: 0 10px;

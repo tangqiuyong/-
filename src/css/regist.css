@@ -1,3 +1,156 @@
+.headerlogo {
+  width: 1425px;
+  height: 100px;
+  padding-top: 20px; }
+.headerlogo .logoinner {
+  position: relative;
+  width: 1000px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto; }
+.headerlogo .logoinner .logo {
+  display: inline;
+  position: relative;
+  float: left;
+  z-index: 1;
+  margin-right: 1px;
+  min-width: 140px;
+  height: 100px; }
+.headerlogo .logoinner .logo .logoimg {
+  margin-left: -20px;
+  min-width: 160px;
+  overflow: hidden; }
+.headerlogo .logoinner .logo .logoimg img {
+  width: 160px;
+  height: 100px; }
+.headerlogo .logoinner .serve {
+  background: url(https://member-ssl.vipstatic.com/img/passport/sprites-hash-21600f5c.png?131e7010) 0 0 no-repeat;
+  width: 304px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0; }
 
+.bgimg {
+  background-image: url(https://a.vpimg2.com/upload/flow/2019/01/29/88/15487540172274.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 650px;
+  width: 1425px; }
+.bgimg .content {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 50px 20px;
+  width: 1000px; }
+.bgimg .content .denglu {
+  width: 360px;
+  height: 504px;
+  border-radius: 2px;
+  background-color: #fff; }
+.bgimg .content .denglu .from {
+  width: 360px; }
+.bgimg .content .denglu .from .nav {
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0; }
+.bgimg .content .denglu .from .nav .navleft {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  vertical-align: top;
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 50px;
+  cursor: pointer;
+  overflow: hidden; }
+.bgimg .content .denglu .from .nav .navleft i {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  z-index: 1;
+  width: 1px;
+  height: 20px;
+  background-color: #ccc;
+  content: "";
+  font-size: 0;
+  line-height: 0; }
+.bgimg .content .denglu .from .nav .navright {
+  width: 180px;
+  vertical-align: top;
+  text-align: center;
+  font-size: 14px;
+  line-height: 50px;
+  color: #666;
+  overflow: hidden; }
+.bgimg .content .denglu .from .nav .navright a {
+  color: #f10180; }
+.bgimg .content .denglu .from .input {
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  padding-top: 10px; }
+.bgimg .content .denglu .from .input .first {
+  width: 300px;
+  margin-top: 30px;
+  position: relative;
+  display: inline-block;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px; }
+.bgimg .content .denglu .from .input .first.noborder {
+  border: 0; }
+.bgimg .content .denglu .from .input .first .iconfont {
+  margin: 0 0 0 10px;
+  font-size: 12px;
+  color: #aaa; }
+.bgimg .content .denglu .from .input .first input {
+  width: 248px;
+  height: 44px;
+  line-height: 44px;
+  border: 0; }
+.bgimg .content .denglu .from .input .agreebox {
+  margin-top: 20px;
+  margin-bottom: 30px; }
+.bgimg .content .denglu .from .input .agreebox span {
+  display: block; }
+.bgimg .content .denglu .from .input .agreebox .agree {
+  color: #666;
+  vertical-align: middle;
+  font-size: 12px;
+  display: inline-block;
+  width: 276px;
+  line-height: 1.5; }
+.bgimg .content .denglu .from .input .agreebox .agree a {
+  color: #1d94d1; }
+.bgimg .content .denglu .from .input .btn {
+  height: 46px;
+  padding: 0; }
+.bgimg .content .denglu .from .input .btn .btn-submit {
+  overflow: hidden;
+  border: 0;
+  display: inline-block;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  min-width: 72px;
+  background-color: #f10180;
+  color: #fff;
+  margin-top: 4px;
+  width: 300px;
+  cursor: pointer;
+  outline: 0;
+  height: 46px; }
+
+.footer {
+  width: 1425px;
+  font-size: 12px; }
+.footer .foot {
+  width: 1000px;
+  margin: 0 auto;
+  height: 78px;
+  line-height: 78px; }
+.footer .foot p {
+  color: #666;
+  text-align: center; }
 
 /*# sourceMappingURL=regist.css.map */

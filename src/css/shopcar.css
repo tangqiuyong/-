@@ -20,11 +20,23 @@
 #shopwrap .shopinner .leftpic .wrap {
   width: 420px;
   margin-bottom: 7px; }
-#shopwrap .shopinner .leftpic .wrap .spic {
+#shopwrap .shopinner .leftpic .wrap #spic {
   width: 420px;
   text-align: center; }
-#shopwrap .shopinner .leftpic .wrap .spic .imgbox img {
+#shopwrap .shopinner .leftpic .wrap #spic .imgbox {
+  display: inline-block;
+  position: relative; }
+#shopwrap .shopinner .leftpic .wrap #spic .imgbox img {
   width: 420px;
+  height: 420px; }
+#shopwrap .shopinner .leftpic .wrap #spic .zoom {
+  width: 420px;
+  height: 420px;
+  display: inline-block;
+  position: relative; }
+#shopwrap .shopinner .leftpic .wrap #spic .zoom img {
+  display: block;
+  widows: 332px;
   height: 420px; }
 #shopwrap .shopinner .leftpic .wrap .ulist {
   width: 420px;
@@ -42,13 +54,9 @@
   cursor: pointer;
   overflow: hidden;
   border: 1px solid #f2f2f2; }
-#shopwrap .shopinner .leftpic .wrap .ulist .list ul li:hover {
+#shopwrap .shopinner .leftpic .wrap .ulist .list ul li.active {
   border: 1px solid #df147f; }
-#shopwrap .shopinner .leftpic .wrap .ulist .list ul li a {
-  display: block;
-  width: 62px;
-  height: 62px; }
-#shopwrap .shopinner .leftpic .wrap .ulist .list ul li a img {
+#shopwrap .shopinner .leftpic .wrap .ulist .list ul li img {
   width: 62px;
   height: 62px; }
 #shopwrap .shopinner .leftpic .wrap .bianhao {

@@ -30,15 +30,30 @@
                 // position: relative;
                 // z-index: 99;
                 margin-bottom: 7px;
-                .spic {
+                #spic {
                     width: 420px;
                     // position: relative;
                     text-align: center;
                     .imgbox {
+                        display: inline-block;
+                        position: relative;
+                        // width: 420px;
+                        // height: 420px;
                         img {
                             width: 420px;
                             height: 420px;
                         }
+                    }
+                    .zoom {
+                        width: 420px;
+                        height: 420px;
+                        display: inline-block;
+                        position: relative;
+                    }
+                    .zoom img {
+                        display: block;
+                        widows: 332px;
+                        height: 420px;
                     }
                 }
                 .ulist {
@@ -60,17 +75,12 @@
                                 // position: relative;
                                 border: 1px solid #f2f2f2;
                                 // background-color: #f7f7f7;
-                                &:hover {
+                                &.active {
                                     border: 1px solid #df147f;
                                 }
-                                a {
-                                    display: block;
+                                img {
                                     width: 62px;
                                     height: 62px;
-                                    img {
-                                        width: 62px;
-                                        height: 62px;
-                                    }
                                 }
                             }
                         }
