@@ -19,6 +19,16 @@
   color: #666;
   font-size: 12px;
   line-height: 36px; }
+.index-nav-list .nav-item.active {
+  background: #df147f;
+  color: #fff;
+  border-radius: 3px; }
+.index-nav-list .nav-item.active .iconfont {
+  color: #fff; }
+.index-nav-list .nav-item.active:hover {
+  color: #fff; }
+.index-nav-list .nav-item.active:hover .iconfont {
+  color: #fff; }
 .index-nav-list .nav-item:hover {
   color: #df147f; }
 .index-nav-list .nav-item:hover .iconfont {

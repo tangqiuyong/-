@@ -7,10 +7,13 @@
   position: relative;
   background-repeat: no-repeat;
   background-position: center top;
+
   .section_1 {
     padding-top: 30px;
     padding-bottom: 20px;
+
     .banner {
+      
       padding: 12px;
       padding-bottom: 0;
       background: #fff;
@@ -19,44 +22,144 @@
       position: relative;
       margin: 0 auto;
       box-shadow: 0 1px 3px rgba(167, 167, 167, 0.4);
+
       img {
         display: block;
         width: 976px;
         height: 392px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding:10px 10px  ;
+      }
+      .subnavimg{
+        padding-bottom: 50px;
+      }
+      .btn {
+        width: 976px;
+        border-bottom: none;
+        height: 380px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+.active{
+  display: block;
+  left:200px;
+}
+       
+        i{
+          color: #fff;
+          font-size: 28px;
+        }
+
+        .leftbtn {
+          width:50px;
+          height: 30px;
+          position: absolute;
+          border: 1px solid #666;
+          background-color: #666;
+          opacity: 0.5;
+          left: 0;
+        top:30%;
+        display: none;
+
+        }
+
+        .rightbtn {
+          width: 50px;
+          height: 30px;
+          position: absolute;
+          border: 1px solid #666;
+          background-color: #666;
+          right:2px ;
+          top:30%;
+          opacity: 0.5;
+          display: none;
+
+        }
+
+        
+      }
+      .wenzi {
+        text-align: center;
+        width: 976px;
+        left: 50%;
+        margin-left: -200px;
+        height: 40px;
+        position: absolute;
+        z-index: 2;
+        bottom: -1px;
+
+        ul {
+          width: 100%;
+          height: 40px;
+          text-align: center;
+
+          li {
+            float: left;
+            display: inline-block;
+            width: 195px;
+            height: 40px;
+            line-height: 40px;
+            color: #666;
+            position: relative;
+            font-size: 12px;
+            border-bottom: transparent 3px solid;
+            cursor: pointer;
+          }
+        }
+
+        .hengxian {
+          background-color: #e6057d;
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          height: 3px;
+          width: 195px;
+        }
       }
     }
   }
+
   .section_2 {
     height: 457px;
     width: $width;
     margin: 0 auto;
+
     .title {
+     
       img {
         width: 1000px;
         height: 60px;
         display: block;
       }
     }
+
     .imgbox1 {
       margin-bottom: 20px;
       margin-top: 20px;
+
       img {
         width: 490px;
         height: 137px;
       }
     }
+
     .imgbox2 {
       .left-img {
         width: 208px;
         height: 199px;
         margin-right: 20px;
       }
+
       .imgright {
         width: 316px;
 
         img {
           width: 316px;
           height: 88px;
+
           &:nth-child(2) {
             margin-top: 20px;
           }
@@ -64,105 +167,130 @@
       }
     }
   }
+
   .section_3 {
     width: $width;
     margin: 0 auto;
+
     .title {
+    
       img {
         width: 1000px;
         height: 60px;
         display: block;
       }
     }
+
     .list-item {
       margin-bottom: 70px;
-      &.section_2{
+
+      &.section_2 {
         height: auto;
         margin-bottom: 0px;
       }
+
       .title-2 {
         border-bottom: 1px solid #000;
+
         img {
           width: 273px;
           height: 43px;
         }
+
         a {
           color: #333;
           font-size: 14px;
           position: relative;
           top: 14px;
           line-height: 20px;
+
           .icon-morepress {
             font-size: 14px;
           }
         }
       }
+
       .list {
         margin-top: 20px;
-        & > li {
+
+        &>li {
           float: left;
           width: 490px;
           height: 275px;
           margin-right: 20px;
           margin-bottom: 20px;
           position: relative;
-          & > a:hover {
+
+          &>a:hover {
             .item-img {
               animation: 0.5s opacity linear 1;
+
               @keyframes opacity {
                 0% {
                   opacity: 1;
                 }
+
                 50% {
                   opacity: 0.5;
                 }
+
                 100% {
                   opacity: 1;
                 }
               }
             }
+
             .btn-favorite {
               display: block;
             }
           }
+
           &:nth-child(2n) {
             margin-right: 0;
           }
+
           .item-img {
             width: 490px;
             height: 235px;
             opacity: 1;
             transition: all 0.3s;
           }
+
           .zhekou {
             width: 490px;
             height: 40px;
+
             .txt {
               color: #4d4d4d;
               float: left;
               line-height: 40px;
+
               &.txt-zhe {
                 width: 65px;
                 font-size: 12px;
                 padding-left: 10px;
                 position: relative;
                 top: -3px;
+
                 span {
                   color: $baseColor;
                   font-size: 24px;
                   font-weight: bold;
                 }
               }
+
               &.txt-name {
                 width: 230px;
                 font-size: 14px;
                 padding-left: 20px;
               }
+
               &.txt-time {
                 float: right;
                 width: 58px;
                 font-size: 12px;
                 padding-right: 15px;
+
                 .iconfont {
                   margin-right: 4px;
                   color: $baseColor;
@@ -171,6 +299,7 @@
               }
             }
           }
+
           .btn-favorite {
             display: none;
             position: absolute;
@@ -184,13 +313,16 @@
             line-height: 20px;
             padding: 0 10px;
             color: #333;
+
             &:hover {
               background: $baseColor;
               color: #fff;
+
               .iconfont {
                 color: #fff;
               }
             }
+
             .iconfont {
               margin-right: 4px;
               font-size: 14px;
@@ -199,31 +331,39 @@
           }
         }
       }
+
       .list.spec-list {
         margin-top: 20px;
-        & > li {
+
+        &>li {
           float: left;
           width: 320px;
           height: 200px;
           margin-right: 20px;
           margin-bottom: 20px;
           position: relative;
+
           .item-img {
             width: 320px;
             height: 153px;
           }
+
           &:nth-child(2n) {
             margin-right: 20px;
           }
+
           &:nth-child(3n) {
             margin-right: 0;
           }
+
           .zhekou {
             width: 320px;
             height: 40px;
+
             .txt {
               font-size: 16px;
               line-height: 40px;
+
               &.txt-zhe {
                 width: auto;
 
@@ -233,6 +373,7 @@
                   font-weight: 400;
                 }
               }
+
               &.txt-name {
                 width: 210px;
               }
@@ -240,12 +381,14 @@
           }
         }
       }
+
       .nvzhuang {
-      
+
         &.dangqi {
           margin-top: 70px;
           padding-bottom: 70px;
         }
+
         a {
           display: block;
           color: #fff;

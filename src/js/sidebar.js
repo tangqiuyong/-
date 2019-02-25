@@ -9,4 +9,11 @@ $(function(){
     })
     // 动画
     
+
+    //.回到顶部。
+    $('.go-top').on('click', function () {
+        $('html,body').animate({
+            scrollTop: 0
+        });
+    })
 })
