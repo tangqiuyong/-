@@ -55,7 +55,6 @@
   right: 2px; }
 #main .section_1 .banner .wenzi {
   text-align: center;
-  width: 976px;
   left: 50%;
   margin-left: -200px;
   height: 40px;
@@ -77,9 +76,15 @@
   font-size: 12px;
   cursor: pointer; }
 #main .section_1 .banner .wenzi ul li.active {
-  border-bottom: 3px solid #e6057d; }
-#main .section_1 .banner .wenzi ul li.active .hengxian {
-  left: 200px; }
+  color: #000; }
+#main .section_1 .banner .wenzi .hengxian {
+  background-color: #e6057d;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 3px;
+  width: 195px;
+  transition: all .3s; }
 #main .section_2 {
   height: 457px;
   width: 1000px;
