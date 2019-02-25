@@ -1,6 +1,6 @@
 node_modules/
 dist/
-.sass-cache
+.sass-cache/
 
 yarn.lock
 package-lock.json
