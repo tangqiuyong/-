@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0 ;
+        }
+
+.btn{
+    width: 100px;
+    height: 30px;
+    background-color: blueviolet;
+    border: 1px solid #666;
+    margin: 100px 400px;
+}
+    .box{
+        width: 100px;
+        height: 300px;
+        background-color: blue;
+        display: none;
+        margin:0 400px ;
+    }  
+    </style>
+</head>
+
+<body>
+<div class="btn">dianwo</div>
+    <div class="box"></div>
+</body>
+
+</html>
+<script src="../js/lib/jquery.min.js"></script>
+<script>
+
+
+
+   
+// $('.btn').hover(function(){
+// $('.box').show();
+// $('.box').animate({height:500},500)
+// },function(){
+//     $('.box').hide(); 
+// });
+$('.btn').hover(function(){
+
+$('.box').slideDown('500',function(){
+    $('.box').show();
+});
+
+},function(){
+    $('.box').slideUp ('500') ,function(){
+    $('.box').hide(); 
+}
+
+});
+
+
+</script>

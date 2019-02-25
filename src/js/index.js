@@ -1,19 +1,15 @@
-// <!--轮播图-->
+
 $(function(){
 
-
+// <!--轮播图-->
     var $banner=$('.banner');
-    var $btns=$('.btn');
-    var $pics=$('.banner .subnavimg  img');
+    var $btns=$('.wenzi ul li');
+    var $pics=$('.subnavimg li');
     var $left=$('.leftbtn');
     var $right=$('.rightbtn');
     var $time=null;
     var $autoplaytimer=null;
     var $num=0;
-    
-    
-    //当鼠标划过盒子的时候，左右箭头显示
-    //清除定时器
     $banner.hover(function(){
         $('.leftbtn,.rightbtn').show();
         
@@ -21,7 +17,7 @@ $(function(){
         $('.leftbtn,.rightbtn').hide();
         $autoplaytimer=setInterval(function(){
     $right.click();
-        },2000);
+        },3000);
     });
     $btns.hover(function(){
         $num=$(this).index();
@@ -35,7 +31,7 @@ $(function(){
     
     $right.on('click',function(){
         $num++;
-        if($num>$btns.length-1){
+        if($num>$btns.length){
             $num=0;
         }
         change();
@@ -43,7 +39,7 @@ $(function(){
     $left.on('click',function(){
     $num--;
     if($num<0){
-        $num = $btns.length - 1;
+        $num = $btns.length ;
     }
     change();
     })
@@ -53,10 +49,30 @@ $(function(){
         $btns.eq($num).addClass('active').siblings('li').removeClass('active');
         $pics.eq($num).animate({
             opacity:1
-        }).siblings('img').animate({
+        }).siblings('li').animate({
             opacity:0
         });
     }
+    $autoplaytimer=setInterval(function(){
+		$right.click();
+    },3000);
+    
+
+
+//   左边  导航栏
+
+$('.navinner-li').hover(function(){
+
+    $('.fenleinav').slideDown('500',function(){
+        $('.fenleinav').show();
+    });
+    
+    },function(){
+        $('.fenleinav').slideUp ('500') ,function(){
+        $('.fenleinav').hide(); 
+    }
+    
+    });
     
 
 });

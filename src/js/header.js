@@ -29,4 +29,29 @@ $(function () {
         $(this).removeClass('active');
     });
 
+
+
+
+
+    //   左边  导航栏
+
+$('navinner-ul .navinner-li').hover(function(){
+
+    $('.fenleinav').slideDown('500',function(){
+        $('.fenleinav').show();
+    });
+    
+    },function(){
+        $('.fenleinav').slideUp ('500') ,function(){
+        $('.fenleinav').hide(); 
+    }
+    
+    });
+
+    $('.fenleinav p').hover(function(){
+        $this = $(this);
+        $(this).addClass('active');
+    },function(){
+        $(this).removeClass('active');
+    })
 }) 

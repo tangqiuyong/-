@@ -582,6 +582,83 @@
 
         .navinner-ul {
             height: 43px;
+            position: relative;
+            .fenleinav{
+                width: 176px;
+                height: 570px;
+                background-color: #f10180;
+                position: absolute;
+                left: 0px;
+                top: 43px;
+                z-index:9999 ;
+                display: none;
+                p{
+                    text-align: center;
+                 padding: 5px;   
+                 height: 40px;
+                 line-height: 40px;
+                 width: 176px;
+                 color: #fff;
+                 font-size: 14px;
+                 font-weight: lighter;
+                 &.active{
+                    background-color: #fff;
+                    color: #f10180;
+                    .three{
+                        display: block;
+                    }
+                 }
+             
+                }
+                .three{
+                    position: absolute;
+                    width: 800px;
+                    height: 568px;
+                    background-color: #fff;
+                    z-index:9999 ;
+                    left: 176px;
+                    top: 2px;
+                    display: none;
+
+                    dl{
+                        display: inline-block;
+                        width: 600px;
+                        height: auto;
+                      text-align: center;
+                        border-bottom: 1px solid #ccc;
+                        &:nth-child(11){
+                            border-bottom:none;
+                        }
+                        padding: 5px 0;
+                        dt{
+                            float: left;
+                            width: 125px;
+                        
+                            line-height: 30px;
+                        
+                            float: left;
+                            padding: 0 20px;
+                            i{
+                                float: right;
+                                font-size: 10px;
+                   
+                            }
+                        }
+                        dd{
+                            display: block;
+                            width: 50px;
+                            float: left;
+                            padding:0px 5px ;
+                            text-align: center;
+                          
+                            a{
+                                color: #666;
+                            }
+                        }
+        
+                    }
+                }
+            }
         }
 
         .navinner-ul>li {
