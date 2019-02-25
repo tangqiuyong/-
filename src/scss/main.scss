@@ -87,7 +87,7 @@
 
       .wenzi {
         text-align: center;
-        width: 976px;
+        // width: 976px;
         left: 50%;
         margin-left: -200px;
         height: 40px;
@@ -114,26 +114,23 @@
 
 
             &.active {
+              color:#000;
               // background-color: #e6057d;
-              border-bottom: 3px solid #e6057d;
-
-              .hengxian {
-                left: 200px;
-
-              }
-
+              // border-bottom: 3px solid #e6057d;
             }
           }
         }
 
-        // .hengxian {
-        //   background-color: #e6057d;
-        //   position: absolute;
-        //   bottom: -3px;
-        //   left: 0;
-        //   height: 3px;
-        //   width: 195px;
-        // }
+        .hengxian {
+          background-color: #e6057d;
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          height: 3px;
+          width: 195px;
+          transition: all .3s;
+         
+        }
       }
     }
   }
