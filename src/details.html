@@ -315,6 +315,8 @@
                             </div>
                         </div>
                     </div> -->
+
+
                 </div>
             </div>
         </div>
@@ -324,6 +326,13 @@
     </div>
     <!--页面底部-->
     <div id="footer-box"></div>
+
+
+
+   
+
+
+
 
     <!-- right sidebar -->
     <div id="sidebar-right"></div>
@@ -344,29 +353,32 @@
 
     <script type="text/javascript">
         $.ajax({
-            url: 'http://localhost/taobaocart/php/taobaodata.php',
+            url: 'http://localhost/weipinhui/php/demo.php',
             dataType: 'json'
-        }).done(function(data) {
-            var strhtml = '   <div class="good-img">';
-            $.each(data, function(index, value) {
+        }).done(function (data) {
+            var strhtml = '   <div class="good-list">';
+            $.each(data, function (index, value) {
                 console.log(value);
                 strhtml +=
-                    `
-            		<div class="good-img">
-                     <a href=""><img src="${arrdata[i].url}" alt=""></a>
-                           </div>
-                              <div class="ziti">
-                                  <div class="shangzi">
-                                       <span>${arrdata[i].price}</span>
-                                                   <em>¥516</em>
-                                                       <strong>
-                                                         2.9折
-                                                      </strong>
-                                                  
-                                                  </div>
-                                 <div class="xiazi">
-                                     <a href="">${arrdata[i].title}</a>
-                                    </div>
+                    `	 <div class="good-box">
+        <div class="good-img">
+            <a href=""><img src="${arrdata[i].url}" alt=""></a>
+        </div>
+        <div class="ziti">
+            <div class="shangzi">
+                <span>${arrdata[i].price}</span>
+                <em>¥516</em>
+                <strong>
+                    2.9折
+                </strong>
+
+            </div>
+            <div class="xiazi">
+                <a href="">${arrdata[i].title}</a>
+            </div>
+        </div>
+    </div>
+
             		`;
             });
             strhtml += '</div>';
@@ -377,25 +389,29 @@
         $ajax({
             url: "",
             dataType: '',
-        }).done(function(data) {
-            $.each(data, function(index, value) {
+        }).done(function (data) {
+            $.each(data, function (index, value) {
                 console.log(value);
-                var strhtml = `
-                <div class="good-img">
-                     <a href=""><img src="${arrdata[i].url}" alt=""></a>
-                           </div>
-                              <div class="ziti">
-                                  <div class="shangzi">
-                                       <span>${arrdata[i].price}</span>
-                                                   <em>¥516</em>
-                                                       <strong>
-                                                         2.9折
-                                                      </strong>
-                                                  
-                                                  </div>
-                                 <div class="xiazi">
-                                     <a href="">${arrdata[i].title}</a>
-                                    </div>
+                var strhtml =
+                    `
+                    <div class="good-box">
+        <div class="good-img">
+            <a href=""><img src="${arrdata[i].url}" alt=""></a>
+        </div>
+        <div class="ziti">
+            <div class="shangzi">
+                <span>${arrdata[i].price}</span>
+                <em>¥516</em>
+                <strong>
+                    2.9折
+                </strong>
+
+            </div>
+            <div class="xiazi">
+                <a href="">${arrdata[i].title}</a>
+            </div>
+        </div>
+    </div>
 
                       `;
             })
