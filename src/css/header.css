@@ -301,11 +301,11 @@
   height: 100px;
   z-index: 1; }
 #header .headerlogo .logoinner .search {
+  width: 389px;
   display: inline;
   position: relative;
   z-index: 10;
-  margin-top: 33px;
-  width: 389px; }
+  margin-top: 33px; }
 #header .headerlogo .logoinner .search .search-form {
   position: relative;
   z-index: 2;
@@ -368,7 +368,7 @@
 
 .headernav {
   position: relative;
-  top: 3px;
+  top: 5px;
   z-index: 3; }
 .headernav .navinner {
   width: 1000px;
@@ -426,15 +426,17 @@
   font-size: 12px;
   transform: scale(0.6); }
 .headernav .navinner .navinner-ul .fenleinav .three dl dd {
-  width: 480px;
+  width: 460px;
   text-align: center;
-  float: left; }
+  float: right; }
 .headernav .navinner .navinner-ul .fenleinav .three dl dd a {
   font-size: 12px;
   float: left;
   width: 50px;
   display: block;
   color: #999; }
+.headernav .navinner .navinner-ul .fenleinav .three dl dd a:hover {
+  color: #f10180; }
 .headernav .navinner .navinner-ul > li {
   height: 43px;
   font-size: 16px;
