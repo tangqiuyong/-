@@ -349,6 +349,8 @@
   font-size: 18px;
   line-height: 46px;
   border-radius: 3px; }
+#shopwrap .shopinner .rightcontent .rightinner .from .cart-num a {
+  color: #fff; }
 #shopwrap .shopinner .rightcontent .rightinner .from .cart-num .iconfont {
   font-size: 24px;
   margin-right: 10px; }

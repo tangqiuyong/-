@@ -42,7 +42,7 @@
                 <div class="wrap">
                     <div id="spic">
                         <span id="ex1" class="zoom">
-                            <img id="smallpic" src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/22/8a7cf12f-c71c-4801-8eef-d181466bfde3.jpg"
+                            <img id="smallpic" src=""
                                 alt="">
                         </span>
                     </div>
@@ -50,7 +50,7 @@
                     <div class="ulist">
                         <div class="list clear">
                             <ul class="left">
-                                <li>
+                                <!-- <li>
                                     <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/22/8a7cf12f-c71c-4801-8eef-d181466bfde3.jpg"
                                         alt="">
                                 </li>
@@ -73,7 +73,7 @@
                                 <li>
                                     <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/44/7da71f9a-3d79-44cf-afd6-b776901d1ab1.jpg"
                                         alt="">
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -146,14 +146,14 @@
 
                     <div class="musensen">
                         <p class="sen">Pratesi</p>
-                        <p class="lin"> Carina时尚复古系列百搭链条水桶包 </p>
+                        <p class="lin"> </p>
                     </div>
 
                     <div class="fensebg">
                         <div class="price">
                             <div class="pre-piece">
                                 <span><i>¥</i>
-                                    <em class="exprice">2299</em>
+                                    <em class="exprice"></em>
                                 </span>
                             </div>
 
@@ -213,7 +213,9 @@
                                     <a href="" class="left">
                                         <i class="i-jian">-</i>
                                     </a>
-                                    <em class="left" id="count">1</em>
+                                    <!-- <em class="left" id="count">
+                                        1</em> -->
+                                        <input type="text"  class="left" id="count" value="1">
                                     <a href="" class="left">
                                         <i class="i-add i-jian">+</i>
                                     </a>
@@ -227,8 +229,10 @@
                             <div class="cart-num">
 
                                 <i class="iconfont icon-gouwudai-copy"></i>
-
-                                <span>加入购物袋</span>
+<a href="cart.html">
+        <span>加入购物袋</span>
+</a>
+                              
 
                             </div>
                         </form>
@@ -270,6 +274,7 @@
                 $('.ulist li').removeClass('active')
                 $this.addClass('active');
                 var url = $this.find('img').prop('src');
+                url=url.replace(/_64x64_90/,'');
                 $('#ex1 img').attr('src', url)
                 $('#ex1').zoom();
             })
@@ -292,10 +297,10 @@
             var arrpic = data.urls.split(',');
             var strhtml = '';
             $.each(arrpic, function (index, value) {
-                strhtml += '<img src="' + value + '" />';
+                strhtml += '<li><img src="' + value + '" /></li>';
             });
 
-            $('.list ul li').html(strhtml);
+            $('.list ul').html(strhtml);
         });
 
 
