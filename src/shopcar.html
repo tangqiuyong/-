@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- <link rel="stylesheet" href="./css/header.css" /> -->
+
+    <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/details.css">
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/sidebar-right.css" />
@@ -33,37 +35,44 @@
                 <div class="shopshuoming">
                     <a href="">首页 &nbsp;> &nbsp;</a>
                     <a href="">Pratesi买手最爱意大利小众女包专场</a>
-                    <span title="男士男生鞋韩版潮流百搭透气休闲小白鞋"> Carina时尚复古系列百搭链条水桶包</span>
+                    <span title=""> Carina时尚复古系列百搭链条水桶包</span>
                 </div>
             </div>
             <div class="leftpic left">
                 <div class="wrap">
                     <div id="spic">
                         <span id="ex1" class="zoom">
-                                <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/22/8a7cf12f-c71c-4801-8eef-d181466bfde3.jpg" alt="">
-                            </span>
+                            <img id="smallpic" src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/22/8a7cf12f-c71c-4801-8eef-d181466bfde3.jpg"
+                                alt="">
+                        </span>
                     </div>
 
                     <div class="ulist">
                         <div class="list clear">
                             <ul class="left">
                                 <li>
-                                    <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/22/8a7cf12f-c71c-4801-8eef-d181466bfde3.jpg" alt="">
+                                    <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/22/8a7cf12f-c71c-4801-8eef-d181466bfde3.jpg"
+                                        alt="">
                                 </li>
                                 <li>
-                                    <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/84/1411ba09-7dae-410c-a8ce-1c735a80d210.jpg" alt="">
+                                    <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/84/1411ba09-7dae-410c-a8ce-1c735a80d210.jpg"
+                                        alt="">
                                 </li>
                                 <li>
-                                    <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/82/c8a8abc8-2922-43db-9011-0acb195a114b.jpg" alt="">
+                                    <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/82/c8a8abc8-2922-43db-9011-0acb195a114b.jpg"
+                                        alt="">
                                 </li>
                                 <li>
-                                    <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/189/e0ea6987-c207-4e7f-a9e2-44e45856e89e.jpg" alt="">
+                                    <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/189/e0ea6987-c207-4e7f-a9e2-44e45856e89e.jpg"
+                                        alt="">
                                 </li>
                                 <li>
-                                    <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/2/58f32c97-3eaa-447e-b1cb-806c385758a6.jpg" alt="">
+                                    <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/2/58f32c97-3eaa-447e-b1cb-806c385758a6.jpg"
+                                        alt="">
                                 </li>
                                 <li>
-                                    <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/44/7da71f9a-3d79-44cf-afd6-b776901d1ab1.jpg" alt="">
+                                    <img src="https://a.vpimg3.com/upload/merchandise/pdcvis/607524/2018/0612/44/7da71f9a-3d79-44cf-afd6-b776901d1ab1.jpg"
+                                        alt="">
                                 </li>
                             </ul>
                         </div>
@@ -137,14 +146,14 @@
 
                     <div class="musensen">
                         <p class="sen">Pratesi</p>
-                        <p class="lin">Carina时尚复古系列百搭链条水桶包</p>
+                        <p class="lin"> Carina时尚复古系列百搭链条水桶包 </p>
                     </div>
 
                     <div class="fensebg">
                         <div class="price">
                             <div class="pre-piece">
                                 <span><i>¥</i>
-                                    <em>2299</em>
+                                    <em class="exprice">2299</em>
                                 </span>
                             </div>
 
@@ -204,7 +213,7 @@
                                     <a href="" class="left">
                                         <i class="i-jian">-</i>
                                     </a>
-                                    <em class="left">1</em>
+                                    <em class="left" id="count">1</em>
                                     <a href="" class="left">
                                         <i class="i-add i-jian">+</i>
                                     </a>
@@ -216,7 +225,9 @@
                                 </dd>
                             </dl>
                             <div class="cart-num">
+
                                 <i class="iconfont icon-gouwudai-copy"></i>
+
                                 <span>加入购物袋</span>
 
                             </div>
@@ -237,9 +248,10 @@
 
     <script src="./js/lib/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
-    <script src="./js/sidebar.js"></script>
+    <script src="./script/thirdplugins/cookie.js"></script>
+    <script src=""></script>
     <script>
-        $(function() {
+        $(function () {
             /*公共部分：头部*/
             $("#header-box").load("./template/header.html");
             /*公共部分：right sidebar*/
@@ -250,9 +262,10 @@
     <!-- <script src="./script/thirdplugins/jquery.zoom.js"></script> -->
     <script src="./js/lib/jquery.zoom.min.js"></script>
     <script>
-        $(function() {
+        //放大镜
+        $(function () {
             $('#ex1').zoom();
-            $('.ulist li').click(function() {
+            $('.ulist').on('click',"li",function () {
                 $this = $(this);
                 $('.ulist li').removeClass('active')
                 $this.addClass('active');
@@ -260,7 +273,59 @@
                 $('#ex1 img').attr('src', url)
                 $('#ex1').zoom();
             })
-        })
+        });
+
+        //购物车
+        var $sid = location.search.substring(1).split('=')[1];
+        $.ajax({
+            url: 'http://localhost/weipinhui/php/details.php',
+
+            data: {
+                sid: $sid
+            },
+            dataType: 'json'
+        }).done(function (data) {
+            //console.log(data);
+            $('#smallpic').attr('src', data.url);
+            $('.lin').html(data.titile);
+            $('.exprice').html(data.price);
+            var arrpic = data.urls.split(',');
+            var strhtml = '';
+            $.each(arrpic, function (index, value) {
+                strhtml += '<img src="' + value + '" />';
+            });
+
+            $('.list ul li').html(strhtml);
+        });
+
+
+
+
+
+        //点击加入购物车按钮。
+        var sidarr = []; //商品的编号
+        var numarr = []; //商品的数量
+
+        if (getcookie('cooksid') && getcookie('cookienum')) {
+            sidarr = getcookie('cooksid').split(',');
+            numarr = getcookie('cookienum').split(',');
+        }
+
+        console.log(getcookie('cookienum'));
+        console.log(getcookie('cooksid'));
+        $('.cart-num').on('click', function () {
+            if ($.inArray($sid, sidarr) == -1) { //不存在
+                sidarr.push($sid);
+                numarr.push($('#count').val());
+                addcookie('cooksid', sidarr.toString(), 7);
+                addcookie('cookienum', numarr.toString(), 7);
+            } else { //存在
+                //console.log(numarr[$.inArray($sid,sidarr)]);//已经存在的值
+                var newnum = parseInt($('#count').val()) + parseInt(numarr[$.inArray($sid, sidarr)]);
+                numarr[$.inArray($sid, sidarr)] = newnum;
+                addcookie('cookienum', numarr.toString(), 7);
+            }
+        });
     </script>
 </body>
 

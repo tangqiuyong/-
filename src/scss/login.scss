@@ -105,11 +105,15 @@
                     padding-top: 10px;
                     .first {
                         width: 300px;
-                        margin-top: 30px;
+                        margin-top: 20px;
                         position: relative;
                         display: inline-block;
                         border: 1px solid #b2b2b2;
                         border-radius: 3px;
+
+                        .hong{
+                            display: none;
+                          }
                         &.noborder {
                             border: 0;
                             // margin-top:10px;
@@ -127,6 +131,19 @@
                             border: 0;
                         }
                     }
+
+                    .tip{
+                        height: 15px;
+                        line-height: 15px;
+                     
+                        .error{
+                            display: none;
+                            color: red;
+                            font-size: 12px;
+                        }
+                    
+                    }
+                                       
                     .waiceng {
                         width: 300px;
                         height: 40px;
@@ -160,7 +177,7 @@
                     .btn {
                         height: 46px;
                         padding: 0;
-                        .btn-submit {
+                        .submit {
                             overflow: hidden;
                             border: 0;
                             display: inline-block;
@@ -221,11 +238,23 @@
                         color: #333;
                         font-size: 12px;
                         padding-bottom: 10px;
+                        a{
+                            color: #333;
+                            &:hover{
+                                color: #f10180;
+                            }
+                           
+
+                        }
                         ul>li {
                             float: left;
                             padding: 0 10px;
                             height: 24px;
                             line-height: 24px;
+
+                            &:hover{
+                                color: #f10180;
+                            }
                             &:first-child {
                                 padding-left: 0;
                             }
@@ -289,6 +318,10 @@
                             padding: 0 12px 10px;
                             &:first-child {
                                 padding-left: 0;
+                            }
+
+                            &:hover{
+                                color: #f10180;
                             }
                             &:last-child {
                                 padding-left: 0;

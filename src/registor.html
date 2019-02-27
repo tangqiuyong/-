@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1046914_4w7m82j42e5.css" />
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1046914_z9xjknv2p9n.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- <link rel="stylesheet" href="./css/header.css" /> -->
-    <link rel="stylesheet" href="./css/login.css" />
+    <!-- <link rel="stylesheet" href="./css/login.css" /> -->
     <link rel="stylesheet" href="./css/regist.css">
+    <link rel="stylesheet" href="./css/validation.css">
+
+
+
+
+
 
 </head>
 
@@ -43,63 +49,72 @@
                             <a href="">可直接登录</a>
                         </div>
                     </div>
+                    <!-- <form action="./login.html" method="post" class="form1"> -->
+                    <form class="form1" id="signupForm">
+                        <div class="input">
+                            <div class="first">
+                                <div class="first-input clear">
+                                    <i class="iconfont icon-xingmingyonghumingnicheng"></i>
+                                    <input type="text" placeholder="请输入用户名" name="username" id="username" minlength="2"
+                                        required>
+                                    <span class="hong right"> <i class="iconfont icon-xin"></i></span>
 
-                    <div class="input">
-                        <div class="first">
-                            <div class="first-input">
-                                <i class="iconfont icon-xin"></i>
-                                <input type="text" placeholder="请输入手机号">
-                                <span></span>
-                                <span></span>
+                                </div>
+                            </div>
+                            <div class="tip">
+                                <label class="error" for="username"></label>
+                            </div>
+                            <div class="first">
+                                <div class="first-input clear">
+                                    <i class="iconfont  icon-yonghuming"></i>
+                                    <input placeholder="密码由6-20位字母，数字和符号组合" type="password" name="pass" id="pass"
+                                        minlength="2" required>
+                                    <span class="hong right"> <i class="iconfont icon-xin"></i></span>
+
+                                </div>
+                            </div>
+                            <div class="tip">
+                                <label class="error" for="pass"></label>
+                            </div>
+                            <div class="first">
+                                <div class="first-input clear">
+                                    <i class="iconfont icon-yonghuming"></i>
+                                    <input type="password" name="confirm_password" id="confirm_password" placeholder="请再次输入上面的密码">
+                                    <span class="hong right"> <i class="iconfont icon-xin"></i></span>
+
+                                </div>
+                            </div>
+
+                            <div class="tip">
+                                <label class="error" for="confirm_password"></label>
+                            </div>
+
+                            <div class="agreebox clear">
+                                <span class="left">
+                                    <input type="checkbox" id="agree" name="agree">
+                                </span>
+
+                                <div class="agree right">
+                                    我已阅读并接受以下条款:<a href="">《唯品会服务条款》</a>
+                                    <a href="">《隐私条款》</a>
+                                    <a href="">《唯品支付用户服务协议》</a>
+                                    <a href="">《唯品信用服务协议》</a>
+                                </div>
+                            </div>
+
+
+                            <div class="tip">
+                                <label class="error" for="agree"></label>
+                            </div>
+                            <div class="btn">
+
+                                <!-- type="submit" value="注册" class="login" name="submit" -->
+                                <button class="submit" name="submit" type="submit">
+                                    <span class="ui-btn-loading-before">立即注册</span>
+                                </button>
                             </div>
                         </div>
-                        <div class="tip">
-                            <span></span>
-                        </div>
-                        <div class="first">
-                            <div class="first-input">
-                                <i class="iconfont icon-xin"></i>
-                                <input type="text" placeholder="密码由6-20位字母，数字和符号组合">
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="first">
-                            <div class="first-input">
-                                <i class="iconfont icon-xin"></i>
-                                <input type="text" placeholder="请再次输入上面的密码">
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-
-                        <div class="tip">
-                            <span></span>
-                        </div>
-
-                        <div class="agreebox clear">
-                            <span class="left">
-                              <input type="checkbox">
-                          </span>
-
-                            <div class="agree right">
-                                我已阅读并接受以下条款:<a href="">《唯品会服务条款》</a>
-                                <a href="">《隐私条款》</a>
-                                <a href="">《唯品支付用户服务协议》</a>
-                                <a href="">《唯品信用服务协议》</a>
-                            </div>
-                        </div>
-
-
-                        <div class="tip">
-                            <span></span>
-                        </div>
-                        <div class="btn">
-                            <button type="submit" class="btn-submit">
-                                <span class="ui-btn-loading-before">立即注册</span>
-                            </button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -110,6 +125,95 @@
             <p>Copyright 2008-2018 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
         </div>
     </div>
+
+
+
+
+
 </body>
 
 </html>
+<script src="./js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="./script/thirdplugins/cookie.js" type="text/javascript" charset="utf-8"></script>
+<!-- <script src="./js/registor.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="./script/thirdplugins/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+    //表单验证-用户名
+    $().ready(function () {
+
+
+
+        // 在键盘按下并释放及提交后验证提交表单
+        $("#signupForm").validate({
+
+            // debug: true,
+            submitHandler: function (form) {
+                // console.log(form);
+                $(form).find('input[name="username"]');
+                // console.log($(form).find('input[name="username"]').val());
+                $.ajax({
+                    type: 'POST',
+                    url: '../php/regis.php',
+                    data: {
+                        username: $(form).find('input[name="username"]').val(),
+                        pass: $(form).find('input[name="pass"]').val(),
+
+                    },
+                   success: function () {
+                        console.log('success');
+                        location.href = "http://localhost/weipinhui/src/login.html";
+
+                    },
+                    dataType:"json"
+                });
+
+
+            },
+            rules: {
+
+                username: {
+                    required: true,
+                    minlength: 5
+                },
+                pass: {
+                    required: true,
+                    minlength: 6,
+                    maxlength: 20,
+                },
+                confirm_password: {
+                    required: true,
+                    minlength: 6,
+                    maxlength: 20,
+                    equalTo: "#pass"
+                },
+
+
+                agree: "required"
+            },
+            messages: {
+                username: {
+                    required: "",
+                    minlength: "用户名必需由个5字母组成"
+                },
+                pass: {
+                    required: "请输入密码",
+                    minlength: "密码由6-20位字母，数字和符号组合",
+                    maxlength: "密码由6-20位字母，数字和符号组合"
+                },
+                confirm_password: {
+                    required: "请再次输入密码",
+                    minlength: "密码由6-20位字母，数字和符号组合",
+                    maxlength: "密码由6-20位字母，数字和符号组合",
+                    equalTo: "两次密码输入不一致"
+                },
+
+                agree: "接受服务条款才能注册",
+
+            }
+
+
+
+        })
+    });
+</script>

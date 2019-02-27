@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1046914_4w7m82j42e5.css" />
+    <title>唯品会</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1046914_z9xjknv2p9n.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <!-- <link rel="stylesheet" href="./css/header.css" /> -->
     <link rel="stylesheet" href="./css/login.css" />
+    <!-- <link rel="stylesheet" href="./css/regist.css"> -->
 
 </head>
 
@@ -41,57 +42,54 @@
                         </div>
                         <div class="navright right">账户登录</div>
                     </div>
-
-                    <div class="input">
-                        <div class="first">
-                            <div class="first-input">
-                                <i class="iconfont icon-xin"></i>
-                                <input type="text" placeholder="手机号/用户名/邮箱">
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="tip">
-                            <span></span>
-                        </div>
-                        <div class="first">
-                            <div class="first-input">
-                                <i class="iconfont icon-xin"></i>
-                                <input type="text" placeholder="密码">
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                        <div class="tip">
-                            <span></span>
-                        </div>
-                        <div class="first noborder">
-                            <div class="waiceng clear">
-                                <div class="wangji right">
-                                    <a class="" href="">忘记密码</a>
+                    <form id="form1">
+                        <div class="input">
+                            <div class="first">
+                                <div class="first-input">
+                                    <i class="iconfont icon-xingmingyonghumingnicheng"></i>
+                                    <input type="text" placeholder="手机号/用户名/邮箱" name="username" class="username">
+                                    <!-- <span class="hong right"> <i class="iconfont icon-xin"></i></span> -->
                                 </div>
+                            </div>
+                            <div class="tip">
+                                <label class="error" for="username"></label>
+                            </div>
+                            <div class="first">
+                                <div class="first-input">
+                                    <i class="iconfont  icon-yonghuming"></i>
+                                    <input placeholder="密码" type="password" name="pass" class="pass">
+                                    <!-- <span class="hong right"> <i class="iconfont icon-xin"></i></span> -->
+                                </div>
+                            </div>
+                            <div class="tip">
+                                <label class="error" for="pass"></label>
+                            </div>
+                            <div class="first noborder">
+                                <div class="waiceng clear">
+                                    <div class="wangji right">
+                                        <a class="" href="">忘记密码</a>
+                                    </div>
 
-                                <div class="jizhu left">
-                                    <div class="checkbox">
-                                        <input id="remeber-name" type="checkbox">
-                                        <label for="remeber-name">记住用户名</label>
+                                    <div class="jizhu left">
+                                        <div class="checkbox">
+                                            <input id="remeber-name" type="checkbox">
+                                            <label for="remeber-name">记住用户名</label>
+                                        </div>
                                     </div>
                                 </div>
+
+
+
+                            </div>
+                            <div class="btn">
+                                <button type="submit" class="submit">
+                                    <span class="ui-btn-loading-before">登录</span>
+                                </button>
                             </div>
 
-
-
-                        </div>
-                        <div class="tip">
-                            <span></span>
-                        </div>
-                        <div class="btn">
-                            <button type="submit" class="btn-submit">
-                                <span class="ui-btn-loading-before">登录</span>
-                            </button>
                         </div>
 
-                    </div>
+                    </form>
                     <!-- 微信登录 -->
                     <div class="other-login">
                         <!-- icon -->
@@ -113,7 +111,7 @@
                                     <span class="shouqi left">收起</span>
                                     <i class="iconfont icon-down left"></i>
                                 </li>
-                                <li class="free">免费注册</li>
+                                <li class="free"> <a href="./registor.html">免费注册</a></li>
                             </ul>
                         </div>
                         <!-- 隐藏部分 -->
@@ -140,3 +138,77 @@
 </body>
 
 </html>
+
+<!-- <script src="./script/thirdplugins/ajax.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="./script/thirdplugins/cookie.js" type="text/javascript" charset="utf-8"></script>
+<script src="./js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="./script/thirdplugins/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $().ready(function () {
+
+
+        // 在键盘按下并释放及提交后验证提交表单
+        $("#form1").validate({
+
+            // debug: true,
+            submitHandler: function (form) {
+                // console.log(form);
+                $(form).find('input[name="username"]');
+                // console.log($(form).find('input[name="username"]').val());
+                $.ajax({
+                    type: 'POST',
+                    url: '../php/login.php',
+                    data: {
+                        username: $(form).find('input[name="username"]').val(),
+                        pass: $(form).find('input[name="pass"]').val(),
+
+                    },
+                    success: function () {
+                        console.log('success');
+                        location.href = "http://localhost/weipinhui/src/index.html";
+
+                    },
+                    dataType: "json",
+                    error: function (err) {
+                       alert('账号名和密码不正确！')
+                    }
+                });
+
+
+            },
+            rules: {
+
+                username: {
+                    required: true,
+                    minlength: 5
+                },
+                pass: {
+                    required: true,
+                    minlength: 6,
+                    maxlength: 20,
+                },
+
+
+
+            },
+            messages: {
+                username: {
+                    required: "",
+                    minlength: "用户名必需由个5字母组成"
+                },
+                pass: {
+                    required: "请输入密码",
+                    minlength: "密码由6-20位字母，数字和符号组合",
+                    maxlength: "密码由6-20位字母，数字和符号组合"
+                },
+
+
+
+
+            }
+
+
+
+        })
+    });
+</script>

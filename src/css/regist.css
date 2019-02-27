@@ -92,11 +92,13 @@
   padding-top: 10px; }
 .bgimg .content .denglu .from .input .first {
   width: 300px;
-  margin-top: 30px;
+  margin-top: 20px;
   position: relative;
   display: inline-block;
   border: 1px solid #b2b2b2;
   border-radius: 3px; }
+.bgimg .content .denglu .from .input .first .hong {
+  display: none; }
 .bgimg .content .denglu .from .input .first.noborder {
   border: 0; }
 .bgimg .content .denglu .from .input .first .iconfont {
@@ -107,7 +109,15 @@
   width: 248px;
   height: 44px;
   line-height: 44px;
-  border: 0; }
+  border: 0;
+  font-size: 14px; }
+.bgimg .content .denglu .from .input .tip {
+  height: 15px;
+  line-height: 15px; }
+.bgimg .content .denglu .from .input .tip .error {
+  display: none;
+  color: red;
+  font-size: 12px; }
 .bgimg .content .denglu .from .input .agreebox {
   margin-top: 20px;
   margin-bottom: 30px; }
@@ -125,7 +135,7 @@
 .bgimg .content .denglu .from .input .btn {
   height: 46px;
   padding: 0; }
-.bgimg .content .denglu .from .input .btn .btn-submit {
+.bgimg .content .denglu .from .input .btn .submit {
   overflow: hidden;
   border: 0;
   display: inline-block;

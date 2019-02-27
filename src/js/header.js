@@ -26,6 +26,10 @@ $(function() {
       .css("display", "none");
   });
 
+
+// $(".topnavul .zhuce").click(function(){
+//   location.href="registor.html";
+// })
   // 地区事件=========结束
 
   //登录事件=======开始
