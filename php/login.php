@@ -23,7 +23,7 @@
 	
 	$result=mysqli_query($conn1,"select * from database where username='$username' and pass='$pass'");
 	
-	$list=mysqli_fetch_array($result,MYSQLI_ASSOC);
+	$list=mysqli_fetch_array($result,MYSQLI_ASSOC());
 	
 	echo json_encode($list);
 	

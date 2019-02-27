@@ -8,7 +8,7 @@
         width: $width;
         margin: 0 auto;
         padding-top: 15px;
-        z-index: 1;
+        z-index: 9;
         .pro-list {
             border: 1px solid #dfdfdf;
             border-bottom: none;
@@ -49,7 +49,7 @@
                     height: 20px;
                     line-height: 20px;
                     display: block;
-                    color: #f32b80;
+                    color: #cc6aaf;
                     font-size: 12px;
                     strong {
                         color: #999;
@@ -235,7 +235,7 @@
         margin-left: 1px;
         letter-spacing: -.1em;
         word-spacing: -.2em;
-        z-index: 9;
+
         .good-list {
             width: 1020px;
             margin: 0 auto;

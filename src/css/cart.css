@@ -142,12 +142,19 @@ i {
   line-height: 36px;
   float: left;
   font-weight: 700; }
+.cart-top-left span {
+  color: #333;
+  padding: 0 30px;
+  border-left: 1px solid #ccc; }
 
 .cart-top-left a {
-  color: #e4393c; }
+  color: #f10180;
+  font-size: 18px;
+  font-weight: bolder; }
 
 .cart-top-left a em {
-  margin-right: 5px; }
+  margin-right: 5px;
+  font-weight: bolder; }
 
 .cart-top-right {
   float: right;
@@ -192,7 +199,7 @@ i {
 .footline .line {
   width: 80px;
   height: 2px;
-  background: #e4393c;
+  background: #f10180;
   position: absolute;
   z-index: 2; }
 
@@ -234,17 +241,15 @@ i {
 .t-prices {
   width: 120px;
   padding-right: 40px;
-  text-align: right;
   height: 32px; }
 
 .t-quantity {
-  text-align: center;
   width: 80px; }
 
 .t-sum {
   width: 100px;
-  padding-right: 40px;
-  text-align: right; }
+  padding-right: 1px;
+  margin-left: 37px; }
 
 .cart-item-list {
   margin-bottom: 20px; }
@@ -301,9 +306,8 @@ i {
 .header-left-p1 span {
   margin: 0 10px 0 5px;
   padding: 1px 10px;
-  border: 1px solid #f48719;
-  background: #f48719;
-  color: white;
+  font-size: 16px;
+  color: #f10180;
   position: relative; }
 
 .header-left-p1 span b {
@@ -332,9 +336,6 @@ i {
 .goods-item {
   padding: 0 10px 0 40px;
   position: relative; }
-
-.goods-item-sele {
-  background: #fff4e8; }
 
 .goods-info {
   border-top: 1px solid #f1f1f1;
@@ -381,6 +382,9 @@ i {
   height: 40px;
   line-height: 20px;
   overflow: hidden; }
+.goods-d-info span {
+  color: #f10180;
+  padding: 0 2px; }
 
 .goods-ex {
   margin-top: 2px; }
@@ -415,14 +419,13 @@ i {
 
 .b-price {
   width: 120px;
-  padding: 15px 40px 10px 0;
+  padding: 35px 40px 10px 0;
   overflow: hidden;
   text-align: right; }
 
 .b-price .sales-promotion {
   display: block;
   width: 53px;
-  border: 1px solid #f9d2d3;
   color: #e4393c;
   height: 18px;
   text-align: left;
@@ -445,7 +448,8 @@ i {
 
 .b-quantity {
   width: 80px;
-  padding: 15px 0 10px; }
+  padding: 30px 0 10px;
+  margin-left: -10px; }
 
 .b-quantity .quantity-form {
   position: relative;
@@ -486,16 +490,16 @@ i {
 .b-sum {
   width: 100px;
   height: 20px;
-  padding: 15px 40px 15px 0;
+  padding: 35px 40px 15px 0;
   text-align: right; }
 
 .b-sum strong {
-  color: #333;
+  color: #f10180;
   font-weight: 700;
-  font-size: 14px; }
+  font-size: 16px; }
 
 .b-action {
-  padding: 15px 0 10px 0; }
+  padding: 35px 0 10px 0; }
 
 .b-action a {
   display: block;
@@ -557,7 +561,7 @@ i {
 
 .price-sum .totalprice {
   font-size: 18px;
-  color: #e4393c;
+  color: #f10180;
   font-weight: 700; }
 
 .amount-sum {
@@ -569,7 +573,7 @@ i {
   cursor: pointer; }
 
 .amount-sum em {
-  color: #e4393c;
+  color: #f10180;
   font-family: verdana;
   font-weight: 700;
   margin: 0 3px; }

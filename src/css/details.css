@@ -6,7 +6,7 @@
   width: 1000px;
   margin: 0 auto;
   padding-top: 15px;
-  z-index: 1; }
+  z-index: 9; }
 #main .maininner .pro-list {
   border: 1px solid #dfdfdf;
   border-bottom: none;
@@ -42,7 +42,7 @@
   height: 20px;
   line-height: 20px;
   display: block;
-  color: #f32b80;
+  color: #cc6aaf;
   font-size: 12px; }
 #main .maininner .pro-list .pro-oper a strong {
   color: #999; }
@@ -191,8 +191,7 @@
   position: relative;
   margin-left: 1px;
   letter-spacing: -.1em;
-  word-spacing: -.2em;
-  z-index: 9; }
+  word-spacing: -.2em; }
 #main .main-content .good-list {
   width: 1020px;
   margin: 0 auto; }

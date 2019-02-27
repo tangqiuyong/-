@@ -1,10 +1,8 @@
- //表单验证-用户名
- $().ready(function () {
-
+$().ready(function () {
 
 
     // 在键盘按下并释放及提交后验证提交表单
-    $("#signupForm").validate({
+    $("#form1").validate({
 
         // debug: true,
         submitHandler: function (form) {
@@ -13,18 +11,21 @@
             // console.log($(form).find('input[name="username"]').val());
             $.ajax({
                 type: 'POST',
-                url: '../php/regis.php',
+                url: '../php/login.php',
                 data: {
                     username: $(form).find('input[name="username"]').val(),
                     pass: $(form).find('input[name="pass"]').val(),
 
                 },
-               success: function () {
+                success: function () {
                     console.log('success');
-                    location.href = "http://localhost/weipinhui/src/login.html";
+                    location.href = "http://localhost/weipinhui/src/index.html";
 
                 },
-                dataType:"json"
+                dataType: "json",
+                error: function (err) {
+                   alert('账号名和密码不正确！')
+                }
             });
 
 
@@ -40,15 +41,9 @@
                 minlength: 6,
                 maxlength: 20,
             },
-            confirm_password: {
-                required: true,
-                minlength: 6,
-                maxlength: 20,
-                equalTo: "#pass"
-            },
 
 
-            agree: "required"
+
         },
         messages: {
             username: {
@@ -60,14 +55,9 @@
                 minlength: "密码由6-20位字母，数字和符号组合",
                 maxlength: "密码由6-20位字母，数字和符号组合"
             },
-            confirm_password: {
-                required: "请再次输入密码",
-                minlength: "密码由6-20位字母，数字和符号组合",
-                maxlength: "密码由6-20位字母，数字和符号组合",
-                equalTo: "两次密码输入不一致"
-            },
 
-            agree: "接受服务条款才能注册",
+
+
 
         }
 
