@@ -7,7 +7,8 @@
         $this.addClass('active');
         var url = $this.find('img').prop('src');
         url=url.replace(/_64x64_90/,'');
-        $('#ex1 img').attr('src', url)
+        url=url.replace(/_235x297_90/,'');
+        $('#ex1').html('<img id="smallpic" src="'+url+'" alt="">')
         $('#ex1').zoom();
     })
 });
@@ -15,7 +16,8 @@
 //购物车
 var $sid = location.search.substring(1).split('=')[1];
 $.ajax({
-    url: 'http://localhost/weipinhui/php/details.php',
+    // url: 'http://localhost/weipinhui/php/details.php',
+    url: '../php/details.php',
 
     data: {
         sid: $sid
@@ -33,6 +35,7 @@ $.ajax({
     });
 
     $('.list ul').html(strhtml);
+    $('#ex1').zoom();
 });
 
 

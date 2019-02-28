@@ -2,7 +2,7 @@
 	//1.渲染商品列表, 传入两个参数，一个id和数量，根据id和数量渲染整个可见的列表.
 	function goodslist(id,count){
 		$.ajax({
-			url:'http://localhost/weipinhui/php/shopcar.php',//获取所有的接口数据
+			url:'../php/shopcar.php',//获取所有的接口数据
             dataType:'json'
      
             
@@ -137,8 +137,8 @@
 	var arrnum=[]; //商品的数量
 	//提前获取cookie里面id和num
 	function cookietoarray(){
-		if(getcookie('cookiesid') && getcookie('cookienum')){
-			arrsid=getcookie('cookiesid').split(',');//cookie商品的sid  
+		if(getcookie('cooksid') && getcookie('cookienum')){
+			arrsid=getcookie('cooksid').split(',');//cookie商品的sid  
 			arrnum=getcookie('cookienum').split(',');//cookie商品的num
 		}
 	}
@@ -160,7 +160,7 @@
 	    });
 	    arrsid.splice($index, 1);//删除数组对应的值
 	    arrnum.splice($index, 1);//删除数组对应的值
-	    addcookie('cookiesid', arrsid.toString(), 7);//添加cookie
+	    addcookie('cooksid', arrsid.toString(), 7);//添加cookie
 	    addcookie('cookienum', arrnum.toString(), 7);//添加cookie
 	}
 	

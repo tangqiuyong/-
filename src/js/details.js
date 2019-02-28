@@ -1,7 +1,8 @@
  $.ajax({
             // url: ' http://192.168.2.1:8080/weipinhui/php/demo.php',
      
-            url: 'http://localhost/weipinhui/php/shopcar.php',
+            // url: 'http://localhost/weipinhui/php/shopcar.php',
+             url: '../php/shopcar.php',
             dataType: 'json'
         }).done(function (data) {
 

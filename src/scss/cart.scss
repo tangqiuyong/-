@@ -585,20 +585,27 @@ font-size: 16px;
 	float: right;
 	
 }
-
-.btn-area a{
-	display: block;	
-	width: 96px;
+.btn-area {
+	width: 170px;
 	height: 52px;
-	
-	
+	line-height: 52px;
+	border: 1px solid #f10180;
+	background-color: #f10180;
+	text-align: center;
+	border-radius: 5px;
+	a{
+		color: #fff;
+		font-size: 20px;
+		font-weight: 1000;
+	}
 }
+
 
 .price-sum{
 	float: right;
 	height: 43px;
 	line-height: 20px;
-	margin: 7px 20px 0 10px;
+	margin: 7px 40px 0 10px;
 	color: #666;
 	width: 220px;
 }
